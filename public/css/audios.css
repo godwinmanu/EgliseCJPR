@@ -1,0 +1,211 @@
+#exhibition-image
+{
+    height: 400px;
+    width: 100%;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/media.jpg);
+    background-size: 100% 100%;
+}
+
+#exhibition-image div:nth-child(1)
+{
+    padding-top: 50px;
+    font-size: 100px;
+    color: white;
+    text-align: end;
+}
+
+#exhibition-image div:nth-child(2)
+{
+    font-size: 50px;
+    color: white;
+    text-align: end;
+}
+
+.audio-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.audio
+{
+    width: 250px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+.miniature-audio > img:hover
+{
+    box-shadow: 1px 1px 5px gray;
+    transform: scale(105%);
+}
+
+.audio-title
+{
+    display: grid;
+    align-content: end;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.miniature-audio > img
+{
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    border-radius: 5px;
+}
+
+.miniature-audio > img:hover
+{
+    box-shadow: 1px 1px 5px gray;
+    transform: scale(105%);
+}
+
+.miniature-audio i
+{   
+    position: relative;
+    bottom: 170px;
+    left: 80px;
+    z-index: 10;
+    text-shadow: 1px 1px 3px #d1c8c8;
+    border-radius: 55px;
+    padding: 15px;
+    color: #ffce2d;
+    font-size: 50px;
+}
+
+.miniature-audio > img:visited
+{
+    transform: scale(200%);
+    transition: transform 7s;
+}
+
+.selected-audio
+{
+    position: fixed;
+    left: 25%;
+    top: 10%;
+    place-self: center;
+    width: 50%;
+    height: 70%;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    border: 1px solid #dfdbdb;
+    box-shadow: 1px 1px 3px ghostwhite;
+    z-index: 20000;
+    border-radius: 5px;
+}
+
+.selected-audio audio
+{
+    width: 100%;
+    height: 100%;
+}
+
+.selected-audio div:nth-child(2)
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #c05c5f;
+    color: white;
+    padding: 10px;
+
+}
+
+.selected-audio h4
+{
+    cursor: pointer;
+}
+
+.selected-audio #reading-audio-title
+{
+    font-weight: bold;
+}
+
+.playing-audio
+{
+    background-image: url(../images/Bible_bg.jpeg);
+    background-size: 100% 100%;
+}
+
+.audio-pagination-container + div
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.audio-pagination-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.audio-pagination-container ul
+{
+    list-style-type: none;
+    display: flex;
+    place-items: center;
+    gap: 20px;
+}
+
+.audio-pagination-container ul a, 
+.audio-pagination-container .active
+{
+    background-color: rgb(230, 221, 221);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #8d191c;
+}
+
+.audio-pagination-container ul a:hover
+{
+    background-color: rgb(230, 221, 221);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #8d191c;
+}
+
+.audio-pagination-container .active
+{
+    background-color: #8d191c;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(230, 221, 221);
+}
+
+.audio-pagination-container .disabled
+{
+    background-color: rgb(187, 184, 184);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.audio_filter
+{
+    margin-right: 100px;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.audio_filter select
+{
+    width: 100px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    color: black;
+}
