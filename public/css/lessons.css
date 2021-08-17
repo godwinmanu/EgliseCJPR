@@ -11,15 +11,17 @@
 
 .lesson_image
 {
-    background: -webkit-linear-gradient(rgba(58, 55, 75, 0.6),rgba(48, 45, 61, 0.6)) , url(../images/card_1.png);
-    background-size: 100% 100%;
+    background: url(../images/bg_kingdom.png);
+    background-size: cover;
+}
+
+.lesson_image img
+{
     width: 400px;
     height: 400px;
     position: relative;
     top: 20%;
-    left: 15%;
-    place-content: center;
-    font-size: 30px;
+    left: 10%;
 }
 
 .lesson_text

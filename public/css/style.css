@@ -332,14 +332,18 @@ a
     justify-content: center;
 }
 
-.testimony-pagination-container, .messages-pagination-container
+.testimony-pagination-container, 
+.messages-pagination-container , 
+.library-pagination-container
 {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.testimony-pagination-container ul, .messages-pagination-container ul
+.testimony-pagination-container ul, 
+.messages-pagination-container ul, 
+.library-pagination-container ul
 {
     list-style-type: none;
     display: flex;
@@ -350,7 +354,9 @@ a
 .testimony-pagination-container ul a, 
 .testimony-pagination-container .active,
 .messages-pagination-container ul a, 
-.messages-pagination-container .active
+.messages-pagination-container .active,
+.library-pagination-container ul a, 
+.library-pagination-container .active
 {
     background-color: rgb(230, 221, 221);
     padding: 5px 15px;
@@ -358,7 +364,9 @@ a
     color: #8d191c;
 }
 
-.testimony-pagination-container ul a:hover, .messages-pagination-container ul a:hover
+.testimony-pagination-container ul a:hover, 
+.messages-pagination-container ul a:hover , 
+.library-pagination-container ul a:hover
 {
     background-color: rgb(230, 221, 221);
     padding: 5px 15px;
@@ -366,7 +374,9 @@ a
     color: #8d191c;
 }
 
-.testimony-pagination-container .active, .messages-pagination-container .active
+.testimony-pagination-container .active, 
+.messages-pagination-container .active,
+.library-pagination-container .active
 {
     background-color: #8d191c;
     padding: 5px 15px;
@@ -374,7 +384,9 @@ a
     color: rgb(230, 221, 221);
 }
 
-.testimony-pagination-container .disabled, .messages-pagination-container .disabled
+.testimony-pagination-container .disabled, 
+.messages-pagination-container .disabled,
+.library-pagination-container .disabled
 {
     background-color: rgb(187, 184, 184);
     padding: 5px 15px;
@@ -386,15 +398,16 @@ a
 .books-content
 {
     display: flex;
-    flex-wrap: wrap;
+    padding: 0px 50px;
+    column-gap: 20px;
     justify-content: center;
-    gap: 20px;
 }
 
 .book
 {
+    cursor: pointer;
     display: grid;
-    grid-template-rows: auto 30%;
+    grid-template-rows: 70% 30%;
     width: 200px;
     height: 270px;
     box-shadow: 1px 1px 5px rgb(163, 162, 162);
@@ -404,9 +417,12 @@ a
 
 .book-infos
 {
-    display: grid;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-direction: column;
     align-content: space-between;
+    gap: 20px;
+    color: rgb(78, 76, 76);
+    padding: 2px 5px;
 }
 
 .book img

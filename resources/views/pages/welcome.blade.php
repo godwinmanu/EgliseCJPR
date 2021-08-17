@@ -204,31 +204,49 @@
         </div>
         <div class="lessons p-5 mb-5">
           <div class="lesson">
-            <a href="{{ url('lessons/cours-de-bapteme') }}"> <img src="{{ asset("images/lesson_1.png") }}" alt="LESSON"> </a>
+            <a href="{{ url('lessons/cours-de-bapteme') }}"> 
+              <img src="{{ asset("images/lesson_1.png") }}" alt="LESSON"> 
+            </a>
           </div>
           <div class="lesson">
-            <a href="{{ url('lessons/ecole-objectif-de-vie') }}"> <img src="{{ asset("images/lesson_2.png") }}" alt="LESSON"> </a>
+            <a href="{{ url('lessons/ecole-objectif-de-vie') }}">
+              <img src="{{ asset("images/lesson_2.png") }}" alt="LESSON"> 
+            </a>
           </div>
           <div class="lesson">
-            <a href="{{ url('lessons/naitre-et-grandir-dans-le-royaume') }}"> <img src="{{ asset("images/lesson_3.png") }}" alt="LESSON"> </a>
+            <a href="{{ url('lessons/naitre-et-grandir-dans-le-royaume') }}"> 
+              <img src="{{ asset("images/lesson_3.png") }}" alt="LESSON"> 
+            </a>
           </div>
           <div class="lesson">
-            <a href="{{ url('lessons/ecole-de-la-reussite') }}"> <img src="{{ asset("images/lesson_4.png") }}" alt="LESSON"> </a>
+            <a href="{{ url('lessons/ecole-de-la-reussite') }}"> 
+              <img src="{{ asset("images/lesson_4.png") }}" alt="LESSON"> 
+            </a>
           </div>
           <div class="lesson">
-            <a href="{{ url('lessons/ecole-des-fondements-de-la-foi') }}"> <img src="{{ asset("images/lesson_5.png") }}" alt="LESSON"> </a>
+            <a href="{{ url('lessons/ecole-des-fondements-de-la-foi') }}"> 
+              <img src="{{ asset("images/lesson_5.png") }}" alt="LESSON"> 
+            </a>
           </div>
           <div class="lesson">
-            <a href="{{ url('lessons/ecole-des-evangelistes-missionnaires') }}"> <img src="{{ asset("images/lesson_6.png") }}" alt="LESSON"> </a>
+            <a href="{{ url('lessons/ecole-des-evangelistes-missionnaires') }}"> 
+              <img src="{{ asset("images/lesson_6.png") }}" alt="LESSON"> 
+            </a>
           </div>
           <div class="lesson">
-            <a href="{{ url('lessons/ecole-esther') }}"> <img src="{{ asset("images/lesson_7.png") }}" alt="LESSON"> </a>
+            <a href="{{ url('lessons/ecole-esther') }}"> 
+              <img src="{{ asset("images/lesson_7.png") }}" alt="LESSON"> 
+            </a>
           </div>
           <div class="lesson">
-            <a href="{{ url('lessons/ecole-pastorale') }}"> <img src="{{ asset("images/lesson_9.png") }}" alt="LESSON"> </a>
+            <a href="{{ url('lessons/ecole-pastorale') }}"> 
+              <img src="{{ asset("images/lesson_9.png") }}" alt="LESSON"> 
+            </a>
           </div>
           <div class="lesson">
-            <a href="{{ url('lessons/campus-de-mariage') }}"> <img src="{{ asset("images/lesson_8.png") }}" alt="LESSON"> </a>
+            <a href="{{ url('lessons/campus-de-mariage') }}"> 
+              <img src="{{ asset("images/lesson_8.png") }}" alt="LESSON"> 
+            </a>
           </div>
         </div>
     </div>
@@ -320,68 +338,111 @@
             <h1> Bibliothèque</h1>
             <div class="trait"></div> <br>
         </div>
-        <div class="books-content p-5">
+        <div class="books-content">
+
           <div class="book">
-            <a href="#" target="_blank">
+            <a href="" target="_blank">
               <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
             </a>
-            <div class="book-infos">
-              <div class="bookTitle px-1 pt-2">
-                Lorem ipsum dolor.
-              </div>
-              <div class="bookOtherInfos px-1 pb-1 d-flex justify-content-between">
-                <div class="bookPrice">$24.99</div>
-                <div class="badge"> Payer </div>
-              </div>
-            </div>
           </div>
           
           <div class="book">
             <a href="#" target="_blank">
               <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
             </a>
-            <div class="book-infos">
-              <div class="bookTitle px-1 pt-2">
-                Lorem ipsum dolor.
-              </div>
-              <div class="bookOtherInfos px-1 pb-1 d-flex justify-content-between">
-                <div class="bookPrice">$24.99</div>
-                <div class="badge"> Payer </div>
-              </div>
-            </div>
           </div>
           
           <div class="book">
             <a href="#" target="_blank">
               <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
             </a>
-            <div class="book-infos">
-              <div class="bookTitle px-1 pt-2">
-                Lorem ipsum dolor.
-              </div>
-              <div class="bookOtherInfos px-1 pb-1 d-flex justify-content-between">
-                <div class="bookPrice">$24.99</div>
-                <div class="badge"> Payer </div>
-              </div>
-            </div>
           </div>
           
           <div class="book">
             <a href="#" target="_blank">
               <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
             </a>
-            <div class="book-infos">
-              <div class="bookTitle px-1 pt-2">
-                Lorem ipsum dolor.
-              </div>
-              <div class="bookOtherInfos px-1 pb-1 d-flex justify-content-between">
-                <div class="bookPrice">$24.99</div>
-                <div class="badge"> Payer </div>
-              </div>
-            </div>
           </div>
           
+          <div class="book">
+            <a href="#" target="_blank">
+              <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
+            </a>
+          </div>
+          
+          <div class="book">
+            <a href="#" target="_blank">
+              <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
+            </a>
+          </div>
+          
+          <div class="book">
+            <a href="#" target="_blank">
+              <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
+            </a>
+          </div>
+          
+          <div class="book">
+            <a href="#" target="_blank">
+              <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
+            </a>
+          </div>
+          
+          <div class="book">
+            <a href="#" target="_blank">
+              <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
+            </a>
+          </div>
+          
+          <div class="book">
+            <a href="#" target="_blank">
+              <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
+              <div class="book-infos">
+                <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                <div class="bookPrice text-end">$24.99</div> 
+              </div>
+            </a>
+          </div>
+
         </div>
+        
+        <div class="library-pagination-container my-5 "></div>
     </div>
   </div>
 
@@ -417,8 +478,8 @@
       $(".testimony-pagination-container").pagination({
         items : testimoniesNumber,
         itemsOnPage : testimonyperPage ,
-        prevText : "Précédent",
-        nextText : "Suivant",
+        prevText : "<<",
+        nextText : ">>",
         onPageClick : function(pageNumber)
         {
           let showFrom = testimonyperPage  * (pageNumber - 1);
@@ -427,7 +488,7 @@
         }
       });
 
-      // Pagination for recent messages .messages-pagination-container
+      // Pagination for recent messages 
       let messages = $(".singleMessage");
       let messagesNumber = messages.length;
       let messageperPage = 9;
@@ -437,13 +498,33 @@
       $(".messages-pagination-container").pagination({
         items : messagesNumber,
         itemsOnPage : messageperPage,
-        prevText : "Précédent",
-        nextText : "Suivant",
+        prevText : "<<",
+        nextText : ">>",
         onPageClick : function(pageNumber)
         {
           let showFrom = messageperPage * (pageNumber - 1);
           let showTo = showFrom + messageperPage;
           messages.hide().slice(showFrom, showTo).show();
+        }
+      });
+
+      // Pagination for books
+      let books = $(".book");
+      let booksNumber = books.length;
+      let bookperPage = 5;
+
+      books.slice(bookperPage).hide();
+
+      $(".library-pagination-container").pagination({
+        items : booksNumber,
+        itemsOnPage : bookperPage,
+        prevText : "<<",
+        nextText : ">>",
+        onPageClick : function(pageNumber)
+        {
+          let showFrom = bookperPage * (pageNumber - 1);
+          let showTo = showFrom + bookperPage;
+          books.hide().slice(showFrom, showTo).show();
         }
       });
 

@@ -37,3 +37,10 @@ Route::get('about-us', function() {
     return view('pages.about_us');
 });
 
+Route::get('lessons/{lesson}', function($lesson) {
+    return view('pages.lessons',["lesson" => $lesson]);
+})->name("lessons");
+
+Route::get('video-stream/{selected_video}', function($selected_video) {
+    return view('pages.video-stream',["selected_video" => $selected_video]);
+})->name("video-stream");
