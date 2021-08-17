@@ -86,7 +86,7 @@
               </div>
               <div class="messagesOnMainPage mb-3">
                 <div class="singleMessage">
-                  <a href="https://youtube.com" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
                     <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -99,7 +99,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href="https://youtube.com" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
                     <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -112,7 +112,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href="https://youtube.com" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
                     <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -125,7 +125,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href="https://youtube.com" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
                     <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -138,7 +138,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href="https://youtube.com" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
                     <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -151,7 +151,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href="https://youtube.com" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
                     <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -164,7 +164,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href="https://youtube.com" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
                     <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -177,7 +177,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href="https://youtube.com" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
                     <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
