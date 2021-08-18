@@ -30,7 +30,7 @@
                     <li> <a href="{{ url("audios") }}" class="text-uppercase">Audios</a> </li>
                  </ul>
             </li>
-            <li> <a href="#" class="text-uppercase">Faire un don</a></li>
+            <li> <a href="{{ url("donate") }}" class="text-uppercase">Faire un don</a></li>
             <li> <a href="#" class="text-uppercase">Contacts</a></li>
         </ul>
     </div>

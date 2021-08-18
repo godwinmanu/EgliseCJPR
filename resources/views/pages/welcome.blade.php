@@ -341,7 +341,7 @@
         <div class="books-content">
 
           <div class="book">
-            <a href="" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -351,7 +351,7 @@
           </div>
           
           <div class="book">
-            <a href="#" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -361,7 +361,7 @@
           </div>
           
           <div class="book">
-            <a href="#" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -371,7 +371,7 @@
           </div>
           
           <div class="book">
-            <a href="#" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -381,7 +381,7 @@
           </div>
           
           <div class="book">
-            <a href="#" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -391,7 +391,7 @@
           </div>
           
           <div class="book">
-            <a href="#" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -401,7 +401,7 @@
           </div>
           
           <div class="book">
-            <a href="#" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -411,7 +411,7 @@
           </div>
           
           <div class="book">
-            <a href="#" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -421,7 +421,7 @@
           </div>
           
           <div class="book">
-            <a href="#" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -431,7 +431,7 @@
           </div>
           
           <div class="book">
-            <a href="#" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" target="_blank">
               <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>

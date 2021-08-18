@@ -1,0 +1,27 @@
+.book-detail
+{
+    padding: 50px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-detail img
+{
+    place-self: center;
+    width : 250px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+.buy-book-button
+{
+    padding: 10px;
+    color: white;
+    background-color: #8d191c;
+}
+
+.buy-book-button:hover
+{
+    color: white;
+}

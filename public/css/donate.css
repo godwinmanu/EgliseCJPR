@@ -1,0 +1,55 @@
+#exhibition-image
+{
+    height: 400px;
+    width: 100%;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/Bible_bg.jpeg);
+    background-size: 100% 100%;
+    display: grid;
+    place-items: center;
+}
+
+#exhibition-image div
+{
+    padding-top: 50px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+#exhibition-image + div
+{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+}
+
+.payment-space
+{
+    border: 1px solid #8d191c;
+}
+
+.other-payment-methods
+{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-methods
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.payment-methods > *
+{
+    font-size: 50px;
+}
+
+.thanks-words
+{
+    text-align: justify;
+}

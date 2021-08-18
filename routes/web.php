@@ -44,3 +44,11 @@ Route::get('lessons/{lesson}', function($lesson) {
 Route::get('video-stream/{selected_video}', function($selected_video) {
     return view('pages.video-stream',["selected_video" => $selected_video]);
 })->name("video-stream");
+
+Route::get('books/{selected_book}', function($selected_book) {
+    return view('pages.books',["selected_book" => $selected_book]);
+})->name("selected_book");
+
+Route::get('donate', function() {
+    return view('pages.donate');
+})->name("donate");
