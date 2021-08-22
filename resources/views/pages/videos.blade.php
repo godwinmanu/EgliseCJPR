@@ -9,16 +9,6 @@
 @endsection
 
 @section('content')
-    <div class="selected-video">
-        <div class="playing-video">
-            {{-- <iframe src="https://www.youtube.com/embed/fxZ4H-gq_lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
-            <video id='reading-loader' src='{{ asset("Videos/vid.mp4") }}' controls></video>
-        </div>
-        <div>
-            <span id="reading-video-title">Titre de la vidéo</span>
-            <h4 class="fas fa-times text-light"></h4>
-        </div>
-    </div>
     
     <div class="video-space">
         <div id="exhibition-image">
@@ -27,112 +17,130 @@
         </div>
 
         <div class="video_filter d-flex justify-content-end mt-3">
-            <label for="video_filter" class="text-uppercase fw-bold"> Filtrer par année</label>
-            <select name="video_filter">
-                <option value="2021">2021</option>
+            <select name="Months" class="form-select">
+                <option selected disabled> Mois </option>
+                <option value="Jan"> Janvier </option>
+                <option value="Feb"> Février </option>
+                <option value="Mar"> Mars </option>
+                <option value="Apr"> Avril </option>
+                <option value="May"> Mai </option>
+                <option value="June"> Juin </option>
+                <option value="July"> Juillet </option>
+                <option value="Aug"> Août </option>
+                <option value="Sep"> Septembre </option>
+                <option value="Oct"> Octobre </option>
+                <option value="Nov"> Novembre </option>
+                <option value="Dec"> Décembre </option>
+            </select>
+
+            <select name="Years" class="form-select">
+                <option selected disabled> Années </option>
+                <option value="2019"> 2019 </option>
+                <option value="2020"> 2020 </option>
+                <option value="2021"> 2021 </option>
             </select>
         </div>
 
         <div class="video-content">
             
-            <div class="video">
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Croisade 2020-2021</div>
-            </div>
-            <div class="video">
+            </a>
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="video">
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Cérémonie de Baptème </div>
-            </div>
-            <div class="video">
+            </a>
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="video">
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Cérémonie de Baptème </div>
-            </div>
-            <div class="video">
+            </a>
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="video">
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Cérémonie de Baptème </div>
-            </div>
-            <div class="video">
+            </a>
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="video">
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Cérémonie de Baptème </div>
-            </div>
+            </a>
 
-            <div class="video">
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="video">
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Cérémonie de Baptème </div>
-            </div>
-            <div class="video">
+            </a>
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="video">
+            <a href="{{ url("video-stream","id_video") }}" class="video">
                 <div class="miniature-video">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-play"></i>
                 </div>
                 <div class="video-title"> Cérémonie de Baptème </div>
-            </div>
+            </a>
 
         </div>
 
@@ -142,20 +150,6 @@
 
     <script>
         $(function(){
-            $(".selected-video").hide();
-
-            $(".miniature-video").each(function(){
-                $(this).click(function(){
-
-                    $(".selected-video").show();
-
-                    $(".selected-video h4").click(function(){
-                        $(".selected-video video").trigger("pause");;
-                        $(".selected-video").hide();
-                    }); 
-                });
-            });
-
             // Pagination for videos in Médiathèque
             let videos = $(".video");
             let videosNumber = videos.length;;

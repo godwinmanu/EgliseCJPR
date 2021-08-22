@@ -23,16 +23,16 @@
 
 .audio-content
 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     padding: 50px;
-    justify-content: center;
+    row-gap: 20px;
+    justify-items: center;
 }
 
 .audio
 {
-    width: 250px;
+    width: 300px;
     height: 300px;
     display: grid;
     grid-template-rows: 80% 20%;
@@ -51,6 +51,7 @@
     justify-content: center;
     text-transform: uppercase;
     font-weight: bold;
+    color: rgb(53, 52, 52);
 }
 
 .miniature-audio > img
@@ -71,7 +72,7 @@
 {   
     position: relative;
     bottom: 170px;
-    left: 80px;
+    left: 100px;
     z-index: 10;
     text-shadow: 1px 1px 3px #d1c8c8;
     border-radius: 55px;

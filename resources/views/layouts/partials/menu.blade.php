@@ -26,12 +26,13 @@
                 <a href="#" class="text-uppercase">Médiathèque</a>
                 <ul class="mediathequeSubMenu py-3">
                     <li> <a href="{{ url("videos") }}" class="text-uppercase">Vidéos</a>  </li>
-                    <li> <a href="{{ url("Images") }}" class="text-uppercase">Images</a> </li>
                     <li> <a href="{{ url("audios") }}" class="text-uppercase">Audios</a> </li>
+                    <li> <a href="{{ url("Images") }}" class="text-uppercase">Images</a> </li>
                  </ul>
             </li>
             <li> <a href="{{ url("donate") }}" class="text-uppercase">Faire un don</a></li>
-            <li> <a href="#" class="text-uppercase">Contacts</a></li>
+            <li> <a href="/#join-us" class="text-uppercase">Contacts</a></li>
+            <li> <h2 class="fas fa-user-circle"></h2></li>
         </ul>
     </div>
 </nav>

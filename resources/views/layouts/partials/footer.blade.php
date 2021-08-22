@@ -24,7 +24,6 @@
           <div class="text-uppercase fw-bold py-2">Soyons Connectés</div>
           <div class="lets-be-connected-content text-center">
             <a href="#"> <img src="{{ asset("images/facebook.png") }}" alt="FACEBOOK"> </a>
-            <a href="#"> <img src="{{ asset("images/twitter.png") }}" alt="TWITTER"> </a>
             <a href="#"> <img src="{{ asset("images/youtube.png") }}" alt="YOUTUBE"> </a>
           </div>
         </div>

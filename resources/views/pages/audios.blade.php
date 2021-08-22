@@ -9,15 +9,7 @@
 @endsection
 
 @section('content')
-    <div class="selected-audio">
-        <div class="playing-audio">
-            <audio src="{{ asset("Audios/aud_1.mp3") }}" controls></audio>
-        </div>
-        <div class="d-flex justify-content-between">
-            <span id="reading-audio-title">Titre de l'audio</span>
-            <h4 class="fas fa-times text-light"></h4>
-        </div>
-    </div>
+
     <div class="audio-space">
         <div id="exhibition-image">
             <div>Espace Audios</div>
@@ -25,104 +17,122 @@
         </div>
 
         <div class="audio_filter d-flex justify-content-end mt-3">
-            <label for="audio_filter" class="text-uppercase fw-bold"> Filtrer par année</label>
-            <select name="audio_filter">
-                <option value="2021">2021</option>
+            <select name="Months" class="form-select">
+                <option selected disabled> Mois </option>
+                <option value="Jan"> Janvier </option>
+                <option value="Feb"> Février </option>
+                <option value="Mar"> Mars </option>
+                <option value="Apr"> Avril </option>
+                <option value="May"> Mai </option>
+                <option value="June"> Juin </option>
+                <option value="July"> Juillet </option>
+                <option value="Aug"> Août </option>
+                <option value="Sep"> Septembre </option>
+                <option value="Oct"> Octobre </option>
+                <option value="Nov"> Novembre </option>
+                <option value="Dec"> Décembre </option>
+            </select>
+
+            <select name="Years" class="form-select">
+                <option selected disabled> Années </option>
+                <option value="2019"> 2019 </option>
+                <option value="2020"> 2020 </option>
+                <option value="2021"> 2021 </option>
             </select>
         </div>
 
         <div class="audio-content">
             
-            <div class="audio">
+            <a href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="audio">
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Cérémonie de Baptème </div>
-            </div>
-            <div class="audio">
+            </a>
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="audio">
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Cérémonie de Baptème </div>
-            </div>
-            <div class="audio">
+            </a>
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="audio">
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Cérémonie de Baptème </div>
-            </div>
-            <div class="audio">
+            </a>
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="audio">
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Cérémonie de Baptème </div>
-            </div>
-            <div class="audio">
+            </a>
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="audio">
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Cérémonie de Baptème </div>
-            </div>
-            <div class="audio">
+            </a>
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Croisade 2020-2021</div>
-            </div>
+            </a>
 
-            <div class="audio">
+            <a  href="{{ url("audio-stream","id_audio") }}" class="audio">
                 <div class="miniature-audio">
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <i class="fas fa-headphones"></i>
                 </div>
                 <div class="audio-title"> Cérémonie de Baptème </div>
-            </div>
+            </a>
 
         </div>
 
@@ -131,19 +141,6 @@
 
     <script>
         $(function(){
-            $(".selected-audio").hide();
-
-            $(".miniature-audio").each(function(){
-                $(this).click(function(){
-                    $(".selected-audio").show();
-
-                    $(".selected-audio h4").click(function(){
-                        $(".selected-audio audio").trigger("pause");
-                        $(".selected-audio").hide();
-                    }); 
-                });
-            });
-
             // Pagination for audios in Médiathèque
             let audios = $(".audio");
             let audiosNumber = audios.length;;

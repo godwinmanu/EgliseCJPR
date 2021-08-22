@@ -261,9 +261,10 @@
             <div class="testimonyContent bg-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
+              <span class="fas fa-plus-circle"></span>
             </div>
             <div class="username fw-bold">
-              Mr John AAAAAAA
+              Mr John AAAAAAA 
             </div>
           </div>
           <div class="singleTestimony">
@@ -271,6 +272,7 @@
             <div class="testimonyContent bg-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
+              <span class="fas fa-plus-circle"></span>
             </div>
             <div class="username fw-bold">
               Mr John AAAAAAA
@@ -281,6 +283,7 @@
             <div class="testimonyContent bg-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
+              <span class="fas fa-plus-circle"></span>
             </div>
             <div class="username fw-bold">
               Mr John AAAAAAA
@@ -291,6 +294,7 @@
             <div class="testimonyContent bg-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
+              <span class="fas fa-plus-circle"></span>
             </div>
             <div class="username fw-bold">
               Mr John AAAAAAA
@@ -301,6 +305,7 @@
             <div class="testimonyContent bg-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
+              <span class="fas fa-plus-circle"></span>
             </div>
             <div class="username fw-bold">
               Mr John AAAAAAA
@@ -311,6 +316,7 @@
             <div class="testimonyContent bg-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
+              <span class="fas fa-plus-circle"></span>
             </div>
             <div class="username fw-bold">
               Mr John AAAAAAA
@@ -321,6 +327,7 @@
             <div class="testimonyContent bg-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde?
+              <span class="fas fa-plus-circle"></span>
             </div>
             <div class="username fw-bold">
               Mr John AAAAAAA
@@ -446,7 +453,7 @@
     </div>
   </div>
 
-  <div class="join-us mb-5">
+  <div class="join-us mb-5" id="join-us">
       <div class="section-title">
           <h1> Contactez-nous</h1>
           <div class="trait"></div> <br>
@@ -465,6 +472,7 @@
   </div>
   @include('pages.newsletterpopup')
   @include('pages.testimonypopup')
+  @include('pages.testimony_detail_popup')
 
   <script>
     $(function(){
@@ -542,12 +550,16 @@
         $("#testimonypopup").show();
       });
 
-      $(".testimony-button").click(function(){
-        $("#testimonypopup").show();
-      });
-
       $(".close-testimonypopup").click(function(){
         $("#testimonypopup").hide();
+      });
+
+      $(".testimonyContent span").click(function(){
+        $("#testimony_detail_popup").show();
+      });
+
+      $(".close-testimony_detail_popup").click(function(){
+        $("#testimony_detail_popup").hide();
       });
 
     });

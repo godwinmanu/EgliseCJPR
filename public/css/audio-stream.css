@@ -24,27 +24,26 @@ select option
     padding: 50px;
 }
 
-.video-being-read
+.audio-being-read
 {
     display: flex;
     flex-direction: column;
 }
 
-.video-being-read > img, .video-being-read > video
+.audio-being-read > img, .audio-being-read > audio
 {
     width: 100%;
     height: 600px;
-    /* border-radius: 10px; */
     place-self: center;
     padding-bottom: 30px;
 }
 
-.video-being-read-infos
+.audio-being-read-infos
 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 .share-and-download-icons 
@@ -66,7 +65,7 @@ select option
     color: #6c757d;
 }
 
-.other-videos
+.other-audios
 {
     display: flex;
     flex-direction: column;
@@ -74,21 +73,21 @@ select option
     width: 100%;
 }
 
-.another-video
+.another-audio
 {
     display: grid;
     grid-template-columns: 25% auto;
     column-gap: 10px;
 }
 
-.another-video  img
+.another-audio  img
 {
     width: 100%;
     height: 100%;
     border-radius: 5px;
 }
 
-.another-video  i
+.another-audio  i
 {
    color: white;
    position: relative;
@@ -97,11 +96,11 @@ select option
    z-index: 2000;
    text-shadow: 2px 2px 10px #d1c8c8;
    border-radius: 55px;
-   padding: 15px;
-   background-color: #8d191c;
+   font-size: 50px;
+   color: orange;
 }
 
-.another-video-infos
+.another-audio-infos
 {
     display: flex;
     flex-direction: column;
@@ -109,17 +108,3 @@ select option
     align-self: center;
 }
 
-.video-summary
-{
-    text-align: justify;
-    margin-bottom: 50px;
-    display: grid;
-    border: 0.5px solid rgb(196, 191, 191);
-    border-radius: 3px;
-}
-
-.summary-dropdown-icon
-{
-    padding: 3px 15px;
-    border-bottom: 0.5px solid rgb(196, 191, 191);
-}

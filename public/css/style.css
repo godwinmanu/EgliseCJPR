@@ -211,10 +211,11 @@ a
 
 .messagesOnMainPage
 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px 20px;
+    width: 95%;
+    place-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .singleMessage
@@ -223,7 +224,7 @@ a
     grid-template-rows: 60% auto;
     border: 0.2px solid rgb(201, 200, 200);
     border-radius: 5px;
-    width: 350px;
+    /* width: 350px; */
     height: 350px;
     box-shadow: 1px 1px 5px rgb(163, 162, 162);
 }
@@ -460,7 +461,7 @@ form
     flex-direction: column;
     row-gap: 15px;
     background-size: 100% 100%;
-    width: 90%;
+    width: 70%;
 }
 
 .userInfos
@@ -611,4 +612,40 @@ footer
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.testimonyContent span
+{
+    font-size: 25px;
+    text-align: end;
+    position: relative;
+    left : 180px;
+    color: #8d191c;
+    cursor: pointer;
+}
+
+#testimony_detail_popup
+{
+    z-index: 65000;
+}
+
+#testimony_detail_popup .modal-header
+{
+    background-color: #8d191c;
+    color: white;
+}
+
+#testimony_detail_popup .modal-body
+{
+    text-align: justify;
+}
+
+#testimony_detail_popup .btn-close
+{
+    background-color: white;
+}
+
+.fa-user-circle
+{
+    color: #8d191c;
 }

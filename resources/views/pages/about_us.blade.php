@@ -22,7 +22,6 @@
             </p>
             <div class="church_social_network text-center">
                 <a href="#"> <img src="{{ asset("images/facebook.png") }}" alt="FACEBOOK"> </a>
-                <a href="#"> <img src="{{ asset("images/twitter.png") }}" alt="TWITTER"> </a>
                 <a href="#"> <img src="{{ asset("images/youtube.png") }}" alt="YOUTUBE"> </a>
             </div>
         </div>

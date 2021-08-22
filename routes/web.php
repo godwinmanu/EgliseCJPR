@@ -45,6 +45,10 @@ Route::get('video-stream/{selected_video}', function($selected_video) {
     return view('pages.video-stream',["selected_video" => $selected_video]);
 })->name("video-stream");
 
+Route::get('audio-stream/{selected_audio}', function($selected_audio) {
+    return view('pages.audio-stream',["selected_audio" => $selected_audio]);
+})->name("audio-stream");
+
 Route::get('books/{selected_book}', function($selected_book) {
     return view('pages.books',["selected_book" => $selected_book]);
 })->name("selected_book");
