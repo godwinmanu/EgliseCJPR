@@ -9,6 +9,10 @@
 @endsection
 
 @section('content')
+    <div id="exhibition-image">
+        <div> À propos</div>
+    </div>
+
     <div class="about-container pt-5">
         <div class="about_image text-uppercase fw-bold text-light"> à propos</div>
         <div class="about_text">
@@ -26,6 +30,7 @@
             </div>
         </div>
     </div>
+
 @endsection
 
 @section('footer')

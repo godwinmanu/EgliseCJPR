@@ -10,7 +10,7 @@
             <li> <a href="{{ url("/") }}" class="text-uppercase">Accueil</a></li>
             <li> <a href="{{ url("about-us") }}" class="text-uppercase"> à propos</a></li>
             <li class="eglises"> 
-                <a href="#" class="text-uppercase">Nos églises </a>
+                <a href="#" class="text-uppercase">Nos églises <i class="fas fa-angle-down"></i></a>
                 <ul class="churchesSubMenu py-3">
                    <li> <a href="{{ route("eglises","TRN") }}" class="text-uppercase">Temple Refuge des Nations (TRN)</a>  </li>
                    <li> <a href="{{ route("eglises","TBI") }}" class="text-uppercase">Temple Bethsaleel Israël (TBI)</a> </li>
@@ -23,7 +23,7 @@
                 </ul>
             </li>
             <li class="mediatheque"> 
-                <a href="#" class="text-uppercase">Médiathèque</a>
+                <a href="#" class="text-uppercase">Médiathèque <i class="fas fa-angle-down"></i> </a>
                 <ul class="mediathequeSubMenu py-3">
                     <li> <a href="{{ url("videos") }}" class="text-uppercase">Vidéos</a>  </li>
                     <li> <a href="{{ url("audios") }}" class="text-uppercase">Audios</a> </li>
@@ -32,7 +32,19 @@
             </li>
             <li> <a href="{{ url("donate") }}" class="text-uppercase">Faire un don</a></li>
             <li> <a href="/#join-us" class="text-uppercase">Contacts</a></li>
-            <li> <h2 class="fas fa-user-circle"></h2></li>
+            <li id="signup-li"> <a href="#"> S'INSCRIRE </a> </li>
+            <li> <a class="btn" href="#"> SE CONNECTER </a> </li>
         </ul>
     </div>
 </nav>
+
+<script>
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 300 ){
+            $("nav").addClass("scrolled");
+        }
+        else{
+            $("nav").removeClass("scrolled");
+        }
+    });
+</script>

@@ -1,7 +1,7 @@
 @extends("layouts.template")
 
 <div id="popupNewsletter" class="modal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
                 <p>
@@ -10,7 +10,7 @@
                 </p>
                 <div>
                     <input type="email" name="popupNewsletter-email" class="form-control" placeholder="johhn@gmail.com">
-                    <button type="submit" name="popupNewsletter-submit-button" class="form-control btn btn-primary text-light fw-bold">Envoyer</button>
+                    <button type="submit" name="popupNewsletter-submit-button" class="text-light fw-bold">Envoyer</button>
                 </div>
             </div>
             <div class="modal-footer">

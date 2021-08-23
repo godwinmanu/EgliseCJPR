@@ -10,42 +10,7 @@
 
 @section('content')
     <div class="streaming-space">
-        <div class="fliters">
-            <select name="orators" class="form-select">
-                <option selected disabled> Orateurs </option>
-                <option value="Hermione"> Pasteur Hermione GUIDIBI </option>
-                <option value="Edgard"> Pasteur Edgard GUIDIBI </option>
-                <option value="Reynold"> Ev Reynold TOKANOU </option>
-            </select>
-            <select name="series" class="form-select">
-                <option selected disabled> Séries </option>
-                <option value="read"> LIRE ET MÉDITER LA BIBLE POUR DEVENIR UN GÉANT SPIRITUEL </option>
-                <option value="young"> Séminaire 2019-2020 (Jeune lève toi) </option>
-                <option value="ladies"> Femmes...... </option>
-            </select>
-            <select name="Months" class="form-select">
-                <option selected disabled> Mois </option>
-                <option value="Jan"> Janvier </option>
-                <option value="Feb"> Février </option>
-                <option value="Mar"> Mars </option>
-                <option value="Apr"> Avril </option>
-                <option value="May"> Mai </option>
-                <option value="June"> Juin </option>
-                <option value="July"> Juillet </option>
-                <option value="Aug"> Août </option>
-                <option value="Sep"> Septembre </option>
-                <option value="Oct"> Octobre </option>
-                <option value="Nov"> Novembre </option>
-                <option value="Dec"> Décembre </option>
-            </select>
-            <select name="Years" class="form-select">
-                <option selected disabled> Années </option>
-                <option value="2019"> 2019 </option>
-                <option value="2020"> 2020 </option>
-                <option value="2021"> 2021 </option>
-            </select>
-        </div>
-
+    
         <div class="video-being-read">
             <img src="{{ asset('images/card_3.png') }}">
             <div class="video-being-read-infos">

@@ -21,14 +21,15 @@
                 <div class="book-title fw-bold fs-3">Titre du livre</div>
                 <div class="book-price fs-3">$24.99</div>
             </div>
-            <div class="author-name">
-                <span class="fw-bold"> Author name</span>
-                <button class="buy-book-button"> Passer la commande </button>
-            </div>
             <div class="book-summary"> 
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sapiente consequuntur perferendis dolores temporibus magnam, voluptate ullam, dolor necessitatibus illo natus quod a non ipsa nostrum tempora consectetur eum odio sit nisi dolorum doloribus nesciunt. Fugiat adipisci, ea nemo quaerat excepturi consectetur vero, aspernatur, consequatur amet minima quisquam nesciunt ullam!
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sapiente consequuntur perferendis dolores temporibus magnam, voluptate ullam, dolor necessitatibus illo natus quod a non ipsa nostrum tempora consectetur eum odio sit nisi dolorum doloribus nesciunt. Fugiat adipisci, ea nemo quaerat excepturi consectetur vero, aspernatur, consequatur amet minima quisquam nesciunt ullam!
             </div>
+            <div class="author-name">
+                <span class="fw-bold"> Author name</span>
+                <button class="buy-book-button"> Passer la commande </button>
+            </div>
+            
         </div>
     </div>
 
