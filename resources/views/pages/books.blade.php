@@ -33,6 +33,127 @@
         </div>
     </div>
 
+    <div class="other-books">
+        <div class="book-filter">
+            <select name="authors" class="form-select">
+                <option selected disabled> Auteurs </option>
+                <option value="Hermione"> Pasteur Hermione GUIDIBI </option>
+                <option value="Edgard"> Pasteur Edgard GUIDIBI </option>
+                <option value="Reynold"> Ev Reynold TOKANOU </option>
+            </select>
+            <select name="categories" class="form-select">
+                <option selected disabled> Catégories </option>
+                <option value="foi"> Foi </option>
+                <option value="Leadership"> Leadership </option>
+                <option value="Couple"> Couple </option>
+            </select>
+        </div>
+
+        <div class="other-videos-content">
+            <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+              
+              <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+              
+              <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+              
+              <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+              
+              <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+              
+              <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+              
+              <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+              
+              <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+              
+              <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+              
+              <div class="book">
+                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                  <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
+                  <div class="book-infos">
+                    <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
+                    <div class="bookPrice text-end">$24.99</div> 
+                  </div>
+                </a>
+              </div>
+        </div>
+    </div>
+
+    <div class="library-pagination-container my-5 "></div>
+
     <script>
         $(function(){
             $(".buy-book-button").click(function(){
@@ -41,6 +162,26 @@
 
             $(".close-commandBookPopup").click(function(){
                 $("#commandBookPopup").hide();
+            });
+
+            // Pagination for books
+            let books = $(".book");
+            let booksNumber = books.length;
+            let bookperPage = 6;
+
+            books.slice(bookperPage).hide();
+
+            $(".library-pagination-container").pagination({
+                items : booksNumber,
+                itemsOnPage : bookperPage,
+                prevText : "<<",
+                nextText : ">>",
+                onPageClick : function(pageNumber)
+                {
+                let showFrom = bookperPage * (pageNumber - 1);
+                let showTo = showFrom + bookperPage;
+                books.hide().slice(showFrom, showTo).show();
+                }
             });
         });
     </script>

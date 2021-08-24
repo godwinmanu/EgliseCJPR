@@ -12,7 +12,7 @@ body {
 
 nav {
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 15% auto;
     font-family: "Roboto", sans-serif;
     position: fixed;
     width: 100%;

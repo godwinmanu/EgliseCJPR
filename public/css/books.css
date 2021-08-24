@@ -1,10 +1,10 @@
 .book-detail
 {
-    padding: 50px;
-    padding-top: 100px;
+
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     column-gap: 30px;
+    border: 1px solid #8d191c;
 }
 
 .book-image img
@@ -17,10 +17,8 @@
 .book-detail-infos
 {
     width: 50%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-content: space-between;
-    row-gap: 100px;
 }
 
 .author-name
@@ -65,4 +63,22 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.other-books
+{
+    display: grid;
+    row-gap: 20px;
+}
+
+.book-filter
+{
+    display: flex;
+    column-gap: 50px;
+}
+
+.other-videos-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
 }
