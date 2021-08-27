@@ -8,6 +8,8 @@
     height: 400px;
     width: 100%;
     background: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/media.jpg);
+    background: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/media.jpg);
+    background: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/media.jpg);
     background-size: 100% 100%;
 }
 

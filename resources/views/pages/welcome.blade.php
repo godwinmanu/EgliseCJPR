@@ -49,10 +49,18 @@
 
     </div>
   </header>
+  <div class="annonces mt-2 py-2">
+    <span>
+      <span class="info">
+        TRN : 1er culte : 06 h - 08 h  |  2ème culte : 08 h - 10 h   |  3ème culte : 17 h - 20 h
+      </span>
+      
+      <span class="info">
+        TBI : Culte Unique : 11 h - 14 h
+      </span>
+    </span>
+  </div>
   <div class="main px-5">
-    <div class="annonces">
-        <marquee behavior="" direction="">Jésus est Seigneur.</marquee>
-    </div>
     <div class="about-us text-center">
         <div class="section-title">
             <h1> A propos</h1>
@@ -349,7 +357,7 @@
 
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_1.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -359,7 +367,7 @@
           
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_2.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -369,7 +377,7 @@
           
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_3.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -379,7 +387,7 @@
           
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_4.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -389,7 +397,7 @@
           
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_1.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -399,7 +407,7 @@
           
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_2.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -409,7 +417,7 @@
           
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_3.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -419,7 +427,7 @@
           
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_4.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -429,7 +437,7 @@
           
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_1.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -439,7 +447,7 @@
           
           <div class="book">
             <a href=" {{ url('books', "id_book") }}" target="_blank">
-              <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
+              <img src="{{ asset("images/book_2.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                 <div class="bookPrice text-end">$24.99</div> 
@@ -536,7 +544,7 @@
         }
       });
 
-      setTimeout(popupNewsletter, 5000);
+      // setTimeout(popupNewsletter, 5000);
 
       function popupNewsletter(){
         $("#popupNewsletter").fadeIn();
@@ -561,6 +569,7 @@
       $(".close-testimony_detail_popup").click(function(){
         $("#testimony_detail_popup").hide();
       });
+
 
     });
 

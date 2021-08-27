@@ -9,8 +9,12 @@
 @endsection
 
 @section('content')
+    <div id="exhibition-image">
+        <div>Espace Vidéos</div>
+    </div>
+
     <div class="streaming-space">
-    
+        
         <div class="video-being-read">
             <img src="{{ asset('images/card_3.png') }}">
             <div class="video-being-read-infos">

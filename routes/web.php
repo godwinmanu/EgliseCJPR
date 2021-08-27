@@ -56,3 +56,11 @@ Route::get('books/{selected_book}', function($selected_book) {
 Route::get('donate', function() {
     return view('pages.donate');
 })->name("donate");
+
+Route::get('login', function() {
+    return view('pages.login');
+})->name("login");
+
+Route::get('signup', function() {
+    return view('pages.signup');
+})->name("signup");

@@ -1,3 +1,21 @@
+#exhibition-image
+{
+    height: 400px;
+    width: 100%;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/Bible_bg.jpeg);
+    background-size: 100% 100%;
+    display: grid;
+    place-items: center;
+}
+
+#exhibition-image div
+{
+    padding-top: 50px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+
 .lesson-container
 {
     display: grid;
@@ -11,17 +29,25 @@
 
 .lesson_image
 {
+    position: relative;
+    top: 110px;
+    left: 10%;
+}
+
+.lesson_image div
+{
+    width: 450px;
+    height: 450px;
     background: url(../images/bg_kingdom.png);
     background-size: cover;
+    display: grid;
+    place-content: center;
 }
 
 .lesson_image img
 {
     width: 400px;
     height: 400px;
-    position: relative;
-    top: 20%;
-    left: 10%;
 }
 
 .lesson_text

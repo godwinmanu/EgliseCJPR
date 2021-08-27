@@ -9,24 +9,33 @@
 @endsection
 
 @section('content')
+    <div id="exhibition-image">
+        <div> Nouveau dans le Royaume </div>
+    </div>
 
-    {{ $lessonsCollection = collect([
-        "cours-de-bapteme",
-        "ecole-objectif-de-vie",
-        "naitre-et-grandir-dans-le-royaume",
-        "ecole-de-la-reussite",
-        "ecole-des-fondements-de-la-foi", 
-        "ecole-des-evangelistes-missionnaires",
-        "ecole-esther",
-        "ecole-pastorale",
-        "campus-de-mariage"
-        ]) }}
+    <div id="collect">
+        {{ $lessonsCollection = collect([
+            "cours-de-bapteme",
+            "ecole-objectif-de-vie",
+            "naitre-et-grandir-dans-le-royaume",
+            "ecole-de-la-reussite",
+            "ecole-des-fondements-de-la-foi", 
+            "ecole-des-evangelistes-missionnaires",
+            "ecole-esther",
+            "ecole-pastorale",
+            "campus-de-mariage"
+            ]) }}
+    </div>
 
     @if ($lessonsCollection->contains($lesson))    
         @switch($lesson)
             @case("cours-de-bapteme")
                 <div class="lesson-container pt-5">
-                    <div class="lesson_image text-uppercase fw-bold text-light"> <img src="{{ asset('images/lesson_1.png') }}" alt="IMAGE LESSON"> </div>
+                    <div class="lesson_image text-uppercase fw-bold text-light"> 
+                        <div>
+                            <img src="{{ asset('images/lesson_1.png') }}" alt="IMAGE LESSON">   
+                        </div> 
+                    </div>
                     <div class="lesson_text">
                         <div class="lesson-title pb-3">
                             <h5> Cours de Baptème </h5>
@@ -41,7 +50,11 @@
                 @break
             @case("ecole-objectif-de-vie")
                 <div class="lesson-container pt-5">
-                    <div class="lesson_image text-uppercase fw-bold text-light"> <img src="{{ asset('images/lesson_2.png') }}" alt="IMAGE LESSON"> </div>
+                    <div class="lesson_image text-uppercase fw-bold text-light">
+                        <div>
+                            <img src="{{ asset('images/lesson_2.png') }}" alt="IMAGE LESSON">
+                        </div>
+                    </div>
                     <div class="lesson_text">
                         <div class="lesson-title pb-3">
                             <h5> école d'Objectif de vie </h5>
@@ -56,7 +69,13 @@
                 @break
             @case("naitre-et-grandir-dans-le-royaume")
                 <div class="lesson-container pt-5">
-                    <div class="lesson_image text-uppercase fw-bold text-light"> <img src="{{ asset('images/lesson_3.png') }}" alt="IMAGE LESSON"> </div>
+                    <div class="lesson_image text-uppercase fw-bold text-light"> 
+                        <div>
+                            <div>
+                                <img src="{{ asset('images/lesson_3.png') }}" alt="IMAGE LESSON">
+                            </div> 
+                        </div>
+                    </div>
                     <div class="lesson_text">
                         <div class="lesson-title pb-3">
                             <h5> Naître et grandir dans le Royaume </h5>
@@ -71,7 +90,11 @@
                 @break
             @case("ecole-de-la-reussite")
                 <div class="lesson-container pt-5">
-                    <div class="lesson_image text-uppercase fw-bold text-light"> <img src="{{ asset('images/lesson_4.png') }}" alt="IMAGE LESSON"> </div>
+                    <div class="lesson_image text-uppercase fw-bold text-light"> 
+                        <div>
+                            <img src="{{ asset('images/lesson_4.png') }}" alt="IMAGE LESSON">
+                        </div> 
+                    </div>
                     <div class="lesson_text">
                         <div class="lesson-title pb-3">
                             <h5> école de la réussite </h5>
@@ -86,7 +109,11 @@
                 @break
             @case("ecole-des-fondements-de-la-foi")
                 <div class="lesson-container pt-5">
-                    <div class="lesson_image text-uppercase fw-bold text-light"> <img src="{{ asset('images/lesson_5.png') }}" alt="IMAGE LESSON"> </div>
+                    <div class="lesson_image text-uppercase fw-bold text-light"> 
+                        <div>
+                            <img src="{{ asset('images/lesson_5.png') }}" alt="IMAGE LESSON">
+                        </div> 
+                    </div>
                     <div class="lesson_text">
                         <div class="lesson-title pb-3">
                             <h5> école des fondements de la foi </h5>
@@ -101,7 +128,11 @@
                 @break
             @case("ecole-des-evangelistes-missionnaires")
                 <div class="lesson-container pt-5">
-                    <div class="lesson_image text-uppercase fw-bold text-light"> <img src="{{ asset('images/lesson_6.png') }}" alt="IMAGE LESSON"> </div>
+                    <div class="lesson_image text-uppercase fw-bold text-light"> 
+                        <div>
+                            <img src="{{ asset('images/lesson_6.png') }}" alt="IMAGE LESSON">
+                        </div>
+                    </div>
                     <div class="lesson_text">
                         <div class="lesson-title pb-3">
                             <h5> école des évangélistes missionnaires </h5>
@@ -116,7 +147,11 @@
                 @break
             @case("ecole-esther")
                 <div class="lesson-container pt-5">
-                    <div class="lesson_image text-uppercase fw-bold text-light"> <img src="{{ asset('images/lesson_7.png') }}" alt="IMAGE LESSON"> </div>
+                    <div class="lesson_image text-uppercase fw-bold text-light"> 
+                        <div>
+                            <img src="{{ asset('images/lesson_7.png') }}" alt="IMAGE LESSON">
+                        </div> 
+                    </div>
                     <div class="lesson_text">
                         <div class="lesson-title pb-3">
                             <h5> école d'Esther </h5>
@@ -131,7 +166,11 @@
                 @break
             @case("ecole-pastorale")
                 <div class="lesson-container pt-5">
-                    <div class="lesson_image text-uppercase fw-bold text-light"> <img src="{{ asset('images/lesson_9.png') }}" alt="IMAGE LESSON"> </div>
+                    <div class="lesson_image text-uppercase fw-bold text-light"> 
+                        <div>
+                            <img src="{{ asset('images/lesson_9.png') }}" alt="IMAGE LESSON">
+                        </div> 
+                    </div>
                     <div class="lesson_text">
                         <div class="lesson-title pb-3">
                             <h5> école Pastorale </h5>
@@ -146,7 +185,11 @@
                 @break
             @case("campus-de-mariage")
                 <div class="lesson-container pt-5">
-                    <div class="lesson_image text-uppercase fw-bold text-light"> <img src="{{ asset('images/lesson_8.png') }}" alt="IMAGE LESSON"> </div>
+                    <div class="lesson_image text-uppercase fw-bold text-light"> 
+                        <div>
+                            <img src="{{ asset('images/lesson_8.png') }}" alt="IMAGE LESSON">
+                        </div> 
+                    </div>
                     <div class="lesson_text">
                         <div class="lesson-title pb-3">
                             <h5> Campus de Mariage </h5>
@@ -166,6 +209,9 @@
         {{ view("pages.welcome") }}
     @endif
 
+    <script>
+        $("#collect").hide();
+    </script>
 @endsection
 
 @section('footer')

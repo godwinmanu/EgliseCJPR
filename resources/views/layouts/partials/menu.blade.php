@@ -32,8 +32,8 @@
             </li>
             <li> <a href="{{ url("donate") }}" class="text-uppercase">Faire un don</a></li>
             <li> <a href="/#join-us" class="text-uppercase">Contacts</a></li>
-            <li id="signup-li"> <a href="#"> S'INSCRIRE </a> </li>
-            <li> <a class="btn" href="#"> SE CONNECTER </a> </li>
+            <li id="signup-li"> <a href="{{ route("signup") }}" class="sign-up-link"> S'INSCRIRE </a> </li>
+            <li> <a class="btn log-in-link" href="{{ route("login") }}"> SE CONNECTER </a> </li>
         </ul>
     </div>
 </nav>

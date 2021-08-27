@@ -149,15 +149,19 @@
             </div>
 
         </div>
-
+        <div class="display-selected-image-box">
+            <h4 class="fas fa-times close_displayed-image"></h4>
+            <div></div>
+        </div>
         <div class="album-pagination-container py-3"></div>
     </div>
-
+    
     <script>
         $(function(){
             $(".selected-album").hide();
             $("#image-displayed").hide();
             $(".album-container h4").hide();
+            $(".display-selected-image-box").hide();
 
             $(".last-image-of-album").each(function(){
                 $(this).click(function(){
@@ -173,23 +177,19 @@
                 var displayed_image = "";
                 $(this).click(function(){
                     displayed_image = $(this);
-                    $(this).addClass("display");
-                    $(this).siblings("h4").css({
-                        top : "-8%",
-                        left : "1250%",
-                        color : "#c05c5f",
-                        backgroundColor: "#dfdbdb",
-                        borderRadius : "50px",
-                        padding : "15px 20px",
-                        zIndex : "55000",
-                    }).show();
-
-                    setInterval(() => {
-                        $(this).siblings("h4").click(function(){
-                            $(displayed_image).removeClass("display");
-                            $(".selected-album").show();
-                        });
-                    }, 500);
+                    // $(this).addClass("display");
+                    let currentImageSource = displayed_image.prop("src");
+                    let selectedImage = document.createElement("img");
+                    selectedImage.src = currentImageSource;
+                    selectedImage.alt = "IMAGE";
+                    $(".display-selected-image-box div").html(selectedImage);
+                    $(".display-selected-image-box").show();
+                    // $("body").css({filter : "brightness(50%)"});
+                    
+                    $(".display-selected-image-box h4").click(function(){
+                        document.querySelector(".display-selected-image-box img").remove();
+                        $(".display-selected-image-box").hide();
+                    }); 
                 });
                 
             });
