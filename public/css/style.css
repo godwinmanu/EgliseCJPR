@@ -510,19 +510,32 @@ footer {
     gap: 30px;
 }
 
-.newsletter-form > input[type="submit"] {
+.input-group > button {
     padding: 0px 10px;
     border-style: none;
     background-color: #09d194;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: 10px;
 }
 
-.lets-be-connected-content img {
-    width: 50px;
-    height: 50px;
+.lets-be-connected-content a {
+    font-size: 40px;
+}
+
+.lets-be-connected-content i {
+    font-size: 40px;
+    color: white;
+}
+
+.lets-be-connected-content .fa-facebook:hover
+{
+    color: #4267B2;
+}
+
+.lets-be-connected-content .fa-youtube:hover
+{
+    color: #ff0000;
 }
 
 #popupNewsletter,
@@ -627,4 +640,13 @@ footer {
         margin-left: -100%;
     }
 }
+
+.slide-arrow
+{
+    font-size: 40px;
+    background-color: rgb(189, 185, 185);
+    padding: 10px 20px;
+    color: white;
+}
+
 /* Responsive */

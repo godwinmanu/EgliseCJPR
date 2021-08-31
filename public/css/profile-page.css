@@ -20,6 +20,11 @@
     width: 95%;
 }
 
+input:disabled
+{
+    background-color: white;
+}
+
 .profile-page .input-div
 {
     width: 100%;

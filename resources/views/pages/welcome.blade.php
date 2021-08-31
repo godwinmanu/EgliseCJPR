@@ -41,10 +41,10 @@
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
         </div>            
         <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel">
-            <h1 class="fas fa-arrow-circle-left p-5"></h1>
+            <div class="fas fa-angle-left slide-arrow"></div>
         </button>
         <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel">
-            <h1 class="fas fa-arrow-circle-right p-5"></h1>
+            <div class="fas fa-angle-right slide-arrow"></div>
         </button>
 
     </div>

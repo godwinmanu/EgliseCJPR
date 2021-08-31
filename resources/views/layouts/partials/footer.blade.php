@@ -15,16 +15,18 @@
           <div class="newsletter-content">
             <small>Inscrivez-vous et recevez les actualités du Centre Jésus Pour Réussir (CJPR)</small>
             <form action="#" method="POST" class="newsletter-form">
-              <input type="email" name="user-email-for-newsletter" placeholder="Votre E-mail ici" class="w-75">
-              <input type="submit" value="Envoyer">
+              <div class="input-group">
+                <input type="email" name="user-email-for-newsletter" placeholder="Votre E-mail ici" class="w-75 form-control">
+                <button type="submit" class="btn">Envoyer </button>
+              </div>
             </form>
           </div>
         </div>
         <div class="lets-be-connected">
           <div class="text-uppercase fw-bold py-2">Soyons Connectés</div>
           <div class="lets-be-connected-content text-center">
-            <a href="#"> <img src="{{ asset("images/facebook.png") }}" alt="FACEBOOK"> </a>
-            <a href="#"> <img src="{{ asset("images/youtube.png") }}" alt="YOUTUBE"> </a>
+            <a href="#"> <i class="fab fa-facebook"></i> </a>
+            <a href="#"> <i class="fab fa-youtube"></i> </a>
           </div>
         </div>
       </div>

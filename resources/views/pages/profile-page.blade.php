@@ -28,7 +28,7 @@
 
         <div class="input-div">
             <input type="password" disabled name="current-password" id="current-password">
-            <label for="current-password" class="fas fa-pen text-info"></label>
+            <label for="current-password" class="fas fa-pen text-info" id="current-password"></label>
         </div>
         <button class="btn btn-info text-light fw-bold">Enrégistrer</button>
   
