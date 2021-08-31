@@ -1,13 +1,13 @@
 <nav>
     <div class="logo pr-2">
-        <a href="#">
+        <a href="{{ route("welcome") }}">
             <img src="{{ asset("images/logo_cjpr.png") }}" alt="LOGO CJPR" width="100" height="70">
         </a>
     </div>
 
     <div class="navBarItem">
         <ul class="navBarElements">
-            <li> <a href="{{ url("/") }}" class="text-uppercase">Accueil</a></li>
+            <li> <a href="{{ route("welcome") }}" class="text-uppercase">Accueil</a></li>
             <li> <a href="{{ url("about-us") }}" class="text-uppercase"> à propos</a></li>
             <li class="eglises"> 
                 <a href="#" class="text-uppercase">Nos églises <i class="fas fa-angle-down"></i></a>
