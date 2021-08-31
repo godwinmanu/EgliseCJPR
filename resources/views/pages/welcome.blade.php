@@ -457,8 +457,11 @@
 
         </div>
         
-        <div class="library-pagination-container my-5 "></div>
-    </div>
+        <div class="library-pagination-container my-5"></div>
+
+        <a class="fas fa-angle-double-up go-top-page" href="#carousel"></a>
+
+      </div>
   </div>
 
   <div class="join-us mb-5" id="join-us">

@@ -649,4 +649,19 @@ footer {
     color: white;
 }
 
+.go-top-page , .go-top-page:hover
+{
+    font-size: 20px;
+    background-color: #26e7ad;
+    border-radius: 100px;
+    padding: 15px 19px;
+    color: white;
+    position: fixed;
+    z-index: 50000;
+    bottom: 5%;
+    right: 2%;
+    box-shadow: 1.5px 1.5px 3px rgb(156, 156, 156);
+    cursor: pointer;
+}
+
 /* Responsive */
