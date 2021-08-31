@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.welcome');
-});
+})->name("welcome");
 
 Route::get('videos', function () {
     return view('pages.videos');
@@ -64,3 +64,19 @@ Route::get('login', function() {
 Route::get('signup', function() {
     return view('pages.signup');
 })->name("signup");
+
+Route::get('forgot_password', function() {
+    return view('pages.forgot_password');
+})->name("forgot_password");
+
+Route::get('reset_password', function() {
+    return view('pages.reset_password');
+})->name("reset_password");
+
+Route::get('dashboard', function() {
+    return view('pages.dashboard');
+})->name("dashboard");
+
+Route::get('profile-page', function() {
+    return view('pages.profile-page');
+})->name("profile-page");

@@ -1,0 +1,40 @@
+.profile-page
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-self: center;
+    width: 85%;
+    height: 60%;
+    column-gap: 50px;
+}
+
+.profile-page > *
+{
+    box-shadow: 2px 2px 10px rgb(201, 198, 198);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.profile-page input
+{
+    border-style: none;
+    outline: none;
+    border-bottom: 3px solid rgb(177, 175, 175);
+    color: rgb(63, 62, 62);
+    width: 90%;
+}
+
+.profile-page .input-div
+{
+    width: 100%;
+}
+
+.profile-page label
+{
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+}

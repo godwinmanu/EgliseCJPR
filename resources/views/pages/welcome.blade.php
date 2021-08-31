@@ -350,7 +350,7 @@
     </div>
     <div class="library">
         <div class="section-title">
-            <h1> Bibliothèque</h1>
+            <h1> Librairie RHEMA</h1>
             <div class="trait"></div> <br>
         </div>
         <div class="books-content">

@@ -16,7 +16,7 @@
                 <button type="submit" id="loginSubmitButton" class="text-light mt-2"> Se connecter </button>
             </form>
             <div class="d-flex justify-content-between">
-                <a href="#" id="forgot-password">Mot de Passe oublié ?</a>
+                <a href=" {{ route("forgot_password") }}" id="forgot-password">Mot de Passe oublié ?</a>
                 <a href="#" id="sign-up">S'inscrire</a>
             </div>
         </div>

@@ -25,6 +25,7 @@
 .lesson-container > *
 {
     display: grid;
+    height: 100%;
 }
 
 .lesson_image
@@ -32,6 +33,7 @@
     position: relative;
     top: 110px;
     left: 10%;
+    z-index: -1;
 }
 
 .lesson_image div
