@@ -19,15 +19,15 @@ Route::get('/', function () {
 
 Route::get('videos', function () {
     return view('pages.videos');
-});
+})->name("videos");
 
 Route::get('Images', function () {
     return view('pages.images');
-});
+})->name("images");
 
 Route::get('audios', function () {
     return view('pages.audios');
-});
+})->name("audios");
 
 Route::get('eglises/{name}', function($name) {
     return view('pages.eglises',["eglise" => $name]);

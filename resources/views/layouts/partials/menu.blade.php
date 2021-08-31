@@ -25,9 +25,9 @@
             <li class="mediatheque"> 
                 <a href="#" class="text-uppercase">Médiathèque <i class="fas fa-angle-down"></i> </a>
                 <ul class="mediathequeSubMenu py-3">
-                    <li> <a href="{{ url("videos") }}" class="text-uppercase">Vidéos</a>  </li>
-                    <li> <a href="{{ url("audios") }}" class="text-uppercase">Audios</a> </li>
-                    <li> <a href="{{ url("Images") }}" class="text-uppercase">Images</a> </li>
+                    <li> <a href="{{ route("videos") }}" class="text-uppercase">Vidéos</a>  </li>
+                    <li> <a href="{{ route("audios") }}" class="text-uppercase">Audios</a> </li>
+                    <li> <a href="{{ route("images") }}" class="text-uppercase">Images</a> </li>
                  </ul>
             </li>
             <li> <a href="{{ url("donate") }}" class="text-uppercase">Faire un don</a></li>
