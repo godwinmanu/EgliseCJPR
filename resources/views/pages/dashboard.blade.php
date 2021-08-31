@@ -58,7 +58,7 @@
                 <a href="#" class="fab fa-facebook-f"></a>
                 <a href="#" class="fab fa-youtube"></a>
             </div>
-    
+
         </div>
         <div class="display-feature">
             <div class="verse">

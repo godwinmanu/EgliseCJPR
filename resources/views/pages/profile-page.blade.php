@@ -6,32 +6,31 @@
 
 @section('content')
     <div class="profile-page">
-        <div>
-            <input type="text" name="surname" id="surname">
-            
-            <input type="text" name="lastnames" id="lastnames">
 
-            <div class="input-div">
-                <input type="email" name="email" id="email">
-                <label for="email" class="fas fa-pen text-info"></label>
-            </div>
+        <input type="text" name="surname" id="surname">
+        
+        <input type="text" name="lastnames" id="lastnames">
+
+        <div class="input-div">
+            <input type="email" name="email" id="email">
+            <label for="email" class="fas fa-pen text-info"></label>
         </div>
-        <div>
-            <div class="input-div">
-                <input type="tel" name="phone-number" id="phone-number">
-                <label for="phone-number" class="fas fa-pen text-info"></label>
-            </div>
 
-            <div class="input-div">
-                <input type="text" name="city" id="city">
-                <label for="city" class="fas fa-pen text-info"></label>
-            </div>
-
-            <div class="input-div">
-                <input type="password" name="current-password" id="current-password">
-                <label for="current-password" class="fas fa-pen text-info"></label>
-            </div>
+        <div class="input-div">
+            <input type="tel" name="phone-number" id="phone-number">
+            <label for="phone-number" class="fas fa-pen text-info"></label>
         </div>
+
+        <div class="input-div">
+            <input type="text" name="city" id="city">
+            <label for="city" class="fas fa-pen text-info"></label>
+        </div>
+
+        <div class="input-div">
+            <input type="password" name="current-password" id="current-password">
+            <label for="current-password" class="fas fa-pen text-info"></label>
+        </div>
+  
     </div>
 
     <script>

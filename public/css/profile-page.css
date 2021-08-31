@@ -1,20 +1,13 @@
 .profile-page
 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     place-self: center;
     width: 85%;
-    height: 60%;
-    column-gap: 50px;
-}
-
-.profile-page > *
-{
+    height: 85%;
     box-shadow: 2px 2px 10px rgb(201, 198, 198);
     padding: 20px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
 }
 
