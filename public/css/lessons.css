@@ -85,3 +85,20 @@
     height: 5px;
     place-self: center;
 }
+
+.badge
+{
+    background-color: #0abb90;
+    width: 130px;
+    place-self: flex-end;
+}
+
+.toast
+{
+    position: fixed;
+    top: 15%;
+    right: 1%;
+    background-color: #0abb90;
+    color: #ffffff;
+    font-weight: bold;
+}

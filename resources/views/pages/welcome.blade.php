@@ -94,7 +94,7 @@
               </div>
               <div class="messagesOnMainPage mb-3">
                 <div class="singleMessage">
-                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" >
                     <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -107,7 +107,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" >
                     <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -120,7 +120,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" >
                     <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -133,7 +133,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" >
                     <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -146,7 +146,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" >
                     <img src="{{ asset("images/card_4.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -159,7 +159,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" >
                     <img src="{{ asset("images/card_1.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -172,7 +172,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" >
                     <img src="{{ asset("images/card_2.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -185,7 +185,7 @@
                   </div>
                 </div>
                 <div class="singleMessage">
-                  <a href=" {{ url('video-stream', "id_video") }}" target="_blank">
+                  <a href=" {{ url('video-stream', "id_video") }}" >
                     <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
                     <i class="fas fa-play"></i>
                   </a>
@@ -356,7 +356,7 @@
         <div class="books-content">
 
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_1.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -366,7 +366,7 @@
           </div>
           
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_2.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -376,7 +376,7 @@
           </div>
           
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_3.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -386,7 +386,7 @@
           </div>
           
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_4.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -396,7 +396,7 @@
           </div>
           
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_1.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -406,7 +406,7 @@
           </div>
           
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_2.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -416,7 +416,7 @@
           </div>
           
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_3.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -426,7 +426,7 @@
           </div>
           
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_4.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -436,7 +436,7 @@
           </div>
           
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_1.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -446,7 +446,7 @@
           </div>
           
           <div class="book">
-            <a href=" {{ url('books', "id_book") }}" target="_blank">
+            <a href=" {{ url('books', "id_book") }}" >
               <img src="{{ asset("images/book_2.jpg") }}" alt="IMAGE">
               <div class="book-infos">
                 <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
@@ -471,12 +471,12 @@
       </div>
       <div class="form py-5">
         <form action="#" method="POST">
-          <input type="text" placeholder="Sujet" class="form-control" name="topic">
+          <input type="text" placeholder="Sujet" name="topic">
           <div class="userInfos">
-            <input type="text" placeholder="Nom et Prénoms" class="form-control" name="username">
-            <input type="email" placeholder="E-mail" class="form-control" name="userEmail">
+            <input type="text" placeholder="Nom et Prénoms" name="username" class="w-50">
+            <input type="email" placeholder="E-mail" name="userEmail" class="w-50">
           </div>
-          <textarea name="userMessage" rows="10" class="form-control"></textarea>
+          <textarea name="userMessage" rows="10" placeholder="Laissez votre message ici..."></textarea>
           <input type="submit" value="Envoyer" id="join-us-submit-button">
         </form>
       </div>

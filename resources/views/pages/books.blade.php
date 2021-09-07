@@ -12,7 +12,7 @@
 
     @include('pages.commandBookPopup')
     <div id="exhibition-image">
-        <div> Bibliothèque </div>
+        <div> Librairie RHEMA </div>
     </div>
 
     <div class="book-detail">
@@ -54,103 +54,103 @@
 
         <div class="other-books-content">
             <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_1.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
               
               <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_2.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
               
               <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_3.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
               
               <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_4.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
               
               <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_1.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
               
               <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_2.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
               
               <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_3.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
               
               <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_4.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
               
               <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_1.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
               
               <div class="library-book">
-                <a href=" {{ url('books', "id_book") }}" target="_blank">
+                
                   <img src="{{ asset("images/book_2.jpg") }}" alt="IMAGE">
                   <div class="book-infos">
                     <div class="bookTitle px-1 pt-2"> Lorem ipsum dolor. </div>
                     <div class="bookPrice text-end">$24.99</div> 
                   </div>
-                </a>
+                
               </div>
         </div>
     </div>
@@ -165,6 +165,13 @@
 
             $(".close-commandBookPopup").click(function(){
                 $("#commandBookPopup").hide();
+            });
+
+            $(".library-book").each(function(){
+                $(this).click(function(){
+                    let bookImageSource = $(this).children("img").prop("src");
+                    $(".book-detail img").prop("src",bookImageSource);
+                });
             });
 
             // Pagination for books

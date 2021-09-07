@@ -1,0 +1,33 @@
+.donators-container
+{
+    width: 85%;
+    padding: 0px 5px;
+    justify-self: center;
+}
+
+.donator
+{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    box-shadow: 2px 2px 7px rgb(212, 212, 212);
+    border-radius: 10px;
+    padding-right: 15px;
+}
+
+.donator-infos, .other-infos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.other-infos
+{
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.gift-icon
+{
+    font-size: 80px;
+}

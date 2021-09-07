@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> {{ env("APP_NAME")}} </title>
     <script src="{{ asset("js/jquery-3.6.0.js") }}"></script>
+    <script src="{{ asset("js/bootstrap.bundle.min.js") }}"></script>
     <script src="{{ asset("js/jquery.simplePagination.js") }}"></script>
     <script src="{{ asset("js/bootstrap.min.js") }}"></script>
     <link rel="stylesheet" href="{{ asset("Font awesome/css/all.min.css") }}">

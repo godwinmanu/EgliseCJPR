@@ -50,7 +50,7 @@
             <img src="{{ asset('images/card_3.png') }}">
             <div class="audio-being-read-infos">
                 <div>
-                    <h2 class="fw-bold">Titre de la audio</h2>
+                    <h2 class="fw-bold">Titre de l'audio</h2>
                     <div class="date-and-author-for-audio-being-read text-secondary fw-bold">
                         <span class="date"> 03 Août 2021 • </span>
                         <span class="author"> Ev Reynold TOKANOU </span>

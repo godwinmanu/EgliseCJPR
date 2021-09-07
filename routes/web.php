@@ -80,3 +80,55 @@ Route::get('dashboard', function() {
 Route::get('profile-page', function() {
     return view('pages.profile-page');
 })->name("profile-page");
+
+Route::get('admin', function() {
+    return view('pages.admin');
+})->name("admin");
+
+Route::get('upload-videos', function() {
+    return view('pages.upload-videos');
+})->name("upload-videos");
+
+Route::get('upload-audios', function() {
+    return view('pages.upload-audios');
+})->name("upload-audios");
+
+Route::get('upload-images', function() {
+    return view('pages.upload-images');
+})->name("upload-images");
+
+Route::get('register-admin', function() {
+    return view('pages.register-admin');
+})->name("register-admin");
+
+Route::get('post-books', function() {
+    return view('pages.post-books');
+})->name("post-books");
+
+Route::get('book-commands', function() {
+    return view('pages.book-commands');
+})->name("book-commands");
+
+Route::get('courses', function() {
+    return view('pages.courses');
+})->name("courses");
+
+Route::get('news', function() {
+    return view('pages.news');
+})->name("news");
+
+Route::get('registered-members', function() {
+    return view('pages.registered-members');
+})->name("registered-members");
+
+Route::get('testimonies', function() {
+    return view('pages.testimonies');
+})->name("testimonies");
+
+Route::get('view-donations', function() {
+    return view('pages.view-donations');
+})->name("view-donations");
+
+Route::get('all-resources', function() {
+    return view('pages.all-resources');
+})->name("all-resources");

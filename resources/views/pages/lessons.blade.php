@@ -9,25 +9,11 @@
 @endsection
 
 @section('content')
+
     <div id="exhibition-image">
         <div> Nouveau dans le Royaume </div>
     </div>
 
-    <div id="collect">
-        {{ $lessonsCollection = collect([
-            "cours-de-bapteme",
-            "ecole-objectif-de-vie",
-            "naitre-et-grandir-dans-le-royaume",
-            "ecole-de-la-reussite",
-            "ecole-des-fondements-de-la-foi", 
-            "ecole-des-evangelistes-missionnaires",
-            "ecole-esther",
-            "ecole-pastorale",
-            "campus-de-mariage"
-            ]) }}
-    </div>
-
-    @if ($lessonsCollection->contains($lesson))    
         @switch($lesson)
             @case("cours-de-bapteme")
                 <div class="lesson-container pt-5">
@@ -52,7 +38,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, excepturi? Exercitationem quisquam perferendis, aspernatur quis non, eum itaque obcaecati sunt impedit incidunt, quae eius ex. Facere, voluptas? Consequuntur recusandae quis animi? Laudantium unde autem repellat a consequatur, architecto sint laborum commodi placeat aut, voluptas ea porro. Ea at quae ad, voluptas a saepe asperiores cupiditate repudiandae! Iusto quibusdam natus optio minus ab dolore! Dignissimos eaque commodi recusandae ratione ipsa distinctio inventore sit. Porro, consectetur doloribus provident alias in quis ducimus consequatur voluptate exercitationem eos eius voluptatum expedita ut maxime incidunt eligendi. Quaerat rerum dolor ipsum impedit eum repellendus numquam sit esse magni cumque ex, fugit beatae enim eveniet tempora veniam, accusamus id distinctio illo recusandae reprehenderit necessitatibus. Blanditiis enim ab eos non omnis expedita quo exercitationem dolores quaerat, nobis modi vitae sit minus error repellat. At deleniti maxime earum autem, voluptatibus sapiente, odit ad nam blanditiis voluptate nisi fuga eaque repellendus rerum vero facere id voluptatem consequuntur cupiditate, alias animi optio incidunt assumenda officiis? Eos magnam consectetur consequuntur. Amet velit nobis nulla ipsum esse laudantium, distinctio, fugiat tempora saepe officia aperiam fuga eius sapiente a asperiores ad ea repudiandae. Possimus alias expedita, aut sapiente ullam natus qui quas voluptates enim!
                             </p>
                         </p>
-                        <button class="btn btn-warning fw-bold">Je m'inscris à ce cours</button>
+                        <button class="btn btn-warning fw-bold subscribe-to-course">Je m'inscris à ce cours</button>
                     </div>
                 </div>
                 @break
@@ -74,7 +60,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fugiat exercitationem ipsum iure quaerat repellendus culpa necessitatibus praesentium modi obcaecati dolore magnam eius sunt adipisci illum aut, molestias ab consectetur sequi quos et. Maxime eveniet distinctio exercitationem suscipit fuga atque delectus, repellendus minus vero minima a excepturi error alias deserunt explicabo quam, neque expedita vitae recusandae! Ut, ratione cumque assumenda recusandae repellat inventore error suscipit quas, dolorem hic, in odio voluptatibus adipisci! Repudiandae eaque quos corporis odio vero nulla perferendis voluptates, accusamus error recusandae maiores voluptatem est porro at ullam cumque quam assumenda cum alias! Distinctio praesentium itaque odio nesciunt ad mollitia earum recusandae, ipsam, doloremque veritatis incidunt quis magnam consequuntur, dicta totam blanditiis excepturi placeat molestiae! Architecto asperiores doloribus eaque totam minus, libero veniam optio eligendi voluptates non. Tempore minima voluptatum fuga rerum recusandae minus, sequi ipsa. Nobis nam ea officia sit, obcaecati repellat quos quod, sapiente praesentium aliquam cum ipsum corporis, amet pariatur rerum alias illo? Blanditiis, voluptatum est dicta, fugiat exercitationem, ea nobis dolores veritatis illo eaque voluptatibus assumenda ducimus itaque consectetur! Sed repellendus provident, laudantium cupiditate enim doloribus temporibus quisquam iste recusandae voluptate illo facere laboriosam delectus! Iure ratione itaque, harum dicta possimus esse commodi sint?
                             </p>
                         </p>
-                        <button class="btn btn-warning fw-bold">Je m'inscris à ce cours</button>
+                        <button class="btn btn-warning fw-bold subscribe-to-course">Je m'inscris à ce cours</button>
                     </div>
                 </div>
                 @break
@@ -113,7 +99,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, excepturi? Exercitationem quisquam perferendis, aspernatur quis non, eum itaque obcaecati sunt impedit incidunt, quae eius ex. Facere, voluptas? Consequuntur recusandae quis animi? Laudantium unde autem repellat a consequatur, architecto sint laborum commodi placeat aut, voluptas ea porro. Ea at quae ad, voluptas a saepe asperiores cupiditate repudiandae! Iusto quibusdam natus optio minus ab dolore! Dignissimos eaque commodi recusandae ratione ipsa distinctio inventore sit. Porro, consectetur doloribus provident alias in quis ducimus consequatur voluptate exercitationem eos eius voluptatum expedita ut maxime incidunt eligendi. Quaerat rerum dolor ipsum impedit eum repellendus numquam sit esse magni cumque ex, fugit beatae enim eveniet tempora veniam, accusamus id distinctio illo recusandae reprehenderit necessitatibus. Blanditiis enim ab eos non omnis expedita quo exercitationem dolores quaerat, nobis modi vitae sit minus error repellat. At deleniti maxime earum autem, voluptatibus sapiente, odit ad nam blanditiis voluptate nisi fuga eaque repellendus rerum vero facere id voluptatem consequuntur cupiditate, alias animi optio incidunt assumenda officiis? Eos magnam consectetur consequuntur. Amet velit nobis nulla ipsum esse laudantium, distinctio, fugiat tempora saepe officia aperiam fuga eius sapiente a asperiores ad ea repudiandae. Possimus alias expedita, aut sapiente ullam natus qui quas voluptates enim!
                             </p>
                         </p>
-                        <button class="btn btn-warning fw-bold">Je m'inscris à ce cours</button>
+                        <button class="btn btn-warning fw-bold subscribe-to-course">Je m'inscris à ce cours</button>
                     </div>
                 </div>
                 @break
@@ -200,7 +186,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, excepturi? Exercitationem quisquam perferendis, aspernatur quis non, eum itaque obcaecati sunt impedit incidunt, quae eius ex. Facere, voluptas? Consequuntur recusandae quis animi? Laudantium unde autem repellat a consequatur, architecto sint laborum commodi placeat aut, voluptas ea porro. Ea at quae ad, voluptas a saepe asperiores cupiditate repudiandae! Iusto quibusdam natus optio minus ab dolore! Dignissimos eaque commodi recusandae ratione ipsa distinctio inventore sit. Porro, consectetur doloribus provident alias in quis ducimus consequatur voluptate exercitationem eos eius voluptatum expedita ut maxime incidunt eligendi. Quaerat rerum dolor ipsum impedit eum repellendus numquam sit esse magni cumque ex, fugit beatae enim eveniet tempora veniam, accusamus id distinctio illo recusandae reprehenderit necessitatibus. Blanditiis enim ab eos non omnis expedita quo exercitationem dolores quaerat, nobis modi vitae sit minus error repellat. At deleniti maxime earum autem, voluptatibus sapiente, odit ad nam blanditiis voluptate nisi fuga eaque repellendus rerum vero facere id voluptatem consequuntur cupiditate, alias animi optio incidunt assumenda officiis? Eos magnam consectetur consequuntur. Amet velit nobis nulla ipsum esse laudantium, distinctio, fugiat tempora saepe officia aperiam fuga eius sapiente a asperiores ad ea repudiandae. Possimus alias expedita, aut sapiente ullam natus qui quas voluptates enim!
                             </p>
                         </p>
-                        <button class="btn btn-warning fw-bold">Je m'inscris à ce cours</button>
+                        <button class="btn btn-warning fw-bold subscribe-to-course">Je m'inscris à ce cours</button>
                     </div>
                 </div>
                 @break
@@ -222,7 +208,7 @@
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum deserunt dolorum recusandae, molestiae, architecto sunt quisquam officiis neque temporibus corporis quos repellat nihil saepe facere error animi quibusdam accusamus dicta nemo dolorem qui velit natus! Optio minus amet assumenda fuga asperiores explicabo officia aspernatur consectetur odit commodi ea voluptate excepturi illum vel saepe dolorem quaerat aperiam deserunt inventore impedit quam, ratione eius enim? Quaerat modi labore sit voluptatibus, odit ad id mollitia praesentium eum cum molestiae accusamus sed fuga beatae saepe provident vitae illo ipsum! Neque recusandae unde consectetur. Officiis ullam, aliquam molestias exercitationem est sapiente qui blanditiis harum! Libero ad quas perspiciatis? Nisi delectus consectetur tempora provident blanditiis similique praesentium repudiandae, libero, officiis quod nihil illo minima laboriosam autem qui hic vel. Aut assumenda odio vel hic excepturi, fugiat, voluptates blanditiis omnis voluptate modi perspiciatis veritatis repellat optio sit officia repudiandae? Facilis, magnam. Enim, harum quae! Aliquam placeat deserunt ad laudantium laborum, numquam rerum iste laboriosam adipisci eveniet modi culpa quasi recusandae accusantium at delectus autem quae mollitia dignissimos sint quis impedit sed maxime minima! Iure culpa tempora aut perferendis, praesentium voluptatum quis quidem unde dolorem autem fugiat, qui magnam possimus, cupiditate laboriosam mollitia harum nam. Eveniet, excepturi doloribus.
                             </p>
                         </p>
-                        <button class="btn btn-warning fw-bold">Je m'inscris à ce cours</button>
+                        <button class="btn btn-warning fw-bold subscribe-to-course">Je m'inscris à ce cours</button>
                     </div>
                 </div>
                 @break
@@ -245,7 +231,7 @@
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum deserunt dolorum recusandae, molestiae, architecto sunt quisquam officiis neque temporibus corporis quos repellat nihil saepe facere error animi quibusdam accusamus dicta nemo dolorem qui velit natus! Optio minus amet assumenda fuga asperiores explicabo officia aspernatur consectetur odit commodi ea voluptate excepturi illum vel saepe dolorem quaerat aperiam deserunt inventore impedit quam, ratione eius enim? Quaerat modi labore sit voluptatibus, odit ad id mollitia praesentium eum cum molestiae accusamus sed fuga beatae saepe provident vitae illo ipsum! Neque recusandae unde consectetur. Officiis ullam, aliquam molestias exercitationem est sapiente qui blanditiis harum! Libero ad quas perspiciatis? Nisi delectus consectetur tempora provident blanditiis similique praesentium repudiandae, libero, officiis quod nihil illo minima laboriosam autem qui hic vel. Aut assumenda odio vel hic excepturi, fugiat, voluptates blanditiis omnis voluptate modi perspiciatis veritatis repellat optio sit officia repudiandae? Facilis, magnam. Enim, harum quae! Aliquam placeat deserunt ad laudantium laborum, numquam rerum iste laboriosam adipisci eveniet modi culpa quasi recusandae accusantium at delectus autem quae mollitia dignissimos sint quis impedit sed maxime minima! Iure culpa tempora aut perferendis, praesentium voluptatum quis quidem unde dolorem autem fugiat, qui magnam possimus, cupiditate laboriosam mollitia harum nam. Eveniet, excepturi doloribus.
                             </p>
                         </p>
-                        <button class="btn btn-warning fw-bold">Je m'inscris à ce cours</button>
+                        <button class="btn btn-warning fw-bold subscribe-to-course">Je m'inscris à ce cours</button>
                     </div>
                 </div>
                 @break
@@ -267,20 +253,51 @@
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum deserunt dolorum recusandae, molestiae, architecto sunt quisquam officiis neque temporibus corporis quos repellat nihil saepe facere error animi quibusdam accusamus dicta nemo dolorem qui velit natus! Optio minus amet assumenda fuga asperiores explicabo officia aspernatur consectetur odit commodi ea voluptate excepturi illum vel saepe dolorem quaerat aperiam deserunt inventore impedit quam, ratione eius enim? Quaerat modi labore sit voluptatibus, odit ad id mollitia praesentium eum cum molestiae accusamus sed fuga beatae saepe provident vitae illo ipsum! Neque recusandae unde consectetur. Officiis ullam, aliquam molestias exercitationem est sapiente qui blanditiis harum! Libero ad quas perspiciatis? Nisi delectus consectetur tempora provident blanditiis similique praesentium repudiandae, libero, officiis quod nihil illo minima laboriosam autem qui hic vel. Aut assumenda odio vel hic excepturi, fugiat, voluptates blanditiis omnis voluptate modi perspiciatis veritatis repellat optio sit officia repudiandae? Facilis, magnam. Enim, harum quae! Aliquam placeat deserunt ad laudantium laborum, numquam rerum iste laboriosam adipisci eveniet modi culpa quasi recusandae accusantium at delectus autem quae mollitia dignissimos sint quis impedit sed maxime minima! Iure culpa tempora aut perferendis, praesentium voluptatum quis quidem unde dolorem autem fugiat, qui magnam possimus, cupiditate laboriosam mollitia harum nam. Eveniet, excepturi doloribus.
                             </p>
                         </p>
-                        <button class="btn btn-warning fw-bold">Je m'inscris à ce cours</button>
+                        <button class="btn btn-warning fw-bold subscribe-to-course">Je m'inscris à ce cours</button>
+                    </div>
+                </div>
+
+                <div class="toast" data-bs-delay="5000">
+                    <div class="toast-body">
+                        Ce cours a été ajouté à votre dashboard. Nous vous
+                        souhaitons une bonne suite. Que l'Eternel vous fortifie.
                     </div>
                 </div>
                 @break
             @default
             {{ view("pages.welcome") }}
         @endswitch
-    @else
-        {{ view("pages.welcome") }}
-    @endif
 
     <script>
-        $("#collect").hide();
+        $(function(){
+            $(".subscribe-to-course").click(function(){
+                var toastElList = [].slice.call(document.querySelectorAll('.toast'));
+                var toastList = toastElList.map(function (toastEl) {
+                    return new bootstrap.Toast(toastEl)
+                });
+                toastList.forEach(toast => toast.show());
+
+                $(this).replaceWith('<div class="badge">Cours Enrégistré</div>');
+            });
+        });
     </script>
+  
+  
+      <!-- Popper.js first, then Bootstrap JS -->
+    {{--   <script>
+        /* document.getElementById("toastbtn").onclick = function() {
+          var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+          var toastList = toastElList.map(function(toastEl) {
+          // Creates an array of toasts (it only initializes them)
+            return new bootstrap.Toast(toastEl) // No need for options; use the default options
+          });
+         toastList.forEach(toast => toast.show()); // This show them
+     
+          console.log(toastList); // Testing to see if it works
+        };
+  
+      </script>  --}}
+  
 @endsection
 
 @section('footer')

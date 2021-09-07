@@ -1,0 +1,35 @@
+form
+{
+    place-self: center;
+    width: 70%;
+    height: 70%;
+}
+
+form textarea
+{
+    padding: 5px;
+    outline: none;
+    border-radius: 3px;
+    border: 0.5px solid rgb(180, 178, 178);
+    resize: none;
+    height: 100%;
+}
+
+form textarea:focus
+{
+    border: 1px solid #0abb90;
+}
+
+button
+{
+    text-transform: uppercase; 
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px 0px;
+    outline: none;
+    border-style: none;
+    background-color: #0abb90;
+    cursor: pointer;
+}

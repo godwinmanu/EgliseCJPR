@@ -1,0 +1,102 @@
+.upload-boxes
+{
+    display: grid;
+    grid-template-rows: auto 10%;
+    column-gap: 20px;
+    height: 90%;
+    width: 95%;
+    place-self: center;
+}
+
+.upload-boxes > div:nth-child(1)
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+.preview-images-box
+{
+    border: 3px dashed #0abb90;
+    display: grid;
+    grid-template-rows: auto 10%;
+}
+
+.upload-album-image
+{
+    display: grid;
+    grid-template-rows: 10% auto;
+    row-gap: 10px;
+}
+
+
+.preview-album-box
+{
+    border: 3px dashed #0abb90;
+    display: grid;
+    grid-template-rows: auto 10%;
+    height: 100%;
+}
+
+.album-miniature,
+.images-to-add 
+{
+    color: white;
+    font-weight: bold;
+    justify-self: center;
+    border-radius: 3px;
+    padding: 3px 10px;
+    outline: none;
+    border-style: none;
+    background-color: #0abb90;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.show-selected-images,
+.show-selected-album-image
+{
+   display: grid;
+}
+
+.show-selected-images i,
+.show-selected-album-image i
+{
+    place-self: center;
+    color: #0abb90;
+    font-size: 60px;
+}
+
+#validate-button
+{   
+    width: 100%;
+    display: grid;
+    align-content: end;
+}
+
+.validate-upload
+{   
+    text-transform: uppercase; 
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px 0px;
+    outline: none;
+    border-style: none;
+    background-color: #0abb90;
+    cursor: pointer;
+}
+
+input 
+{
+    padding: 5px;
+    outline: none;
+    border-radius: 3px;
+    border: 0.5px solid rgb(180, 178, 178);
+}
+
+input:focus
+{
+    border: 1px solid #0abb90;
+}

@@ -398,6 +398,21 @@ a {
     background-size: 100% 100%;
 }
 
+.form input,
+.form textarea
+{
+    padding: 5px;
+    outline: none;
+    border-radius: 3px;
+    border: 0.5px solid rgb(180, 178, 178);
+}
+
+.form input:focus,
+.form textarea:focus
+{
+    border: 1px solid #0abb90;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -415,7 +430,7 @@ form #join-us-submit-button {
     background-color: #09d194;
     width: 120px;
     color: white;
-    border-radius: 30px;
+    border-radius: 5px;
     padding: 10px 0px;
     outline: none;
     border-style: none;
@@ -426,8 +441,6 @@ form #join-us-submit-button {
 form #join-us-submit-button:hover {
     background-color: white;
     color: #09d194;
-    font-weight: bold;
-    border: 3px solid #09d194;
 }
 
 textarea {
