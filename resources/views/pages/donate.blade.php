@@ -14,7 +14,16 @@
     </div>
 
     <div>
-        <div class="payment-space"></div>
+        <div class="payment-space">
+            <kkiapay-widget amount="1000" 
+                            key="f0e123f0099011eca069c75559a38af2"
+                            url="<url-vers-votre-logo>"
+                            {{-- position="center" --}}
+                            sandbox="true"
+                            data=""
+                            callback="<url-de-redirection-quand-lepaiement-est-reuissi>">
+            </kkiapay-widget>
+        </div>
         <div class="thanks-words">
             Merci beaucoup pour votre vision de soutenir la vision
             de l'Eglise CJPR.
@@ -29,6 +38,8 @@
             <div class="fas fa-mobile"></div>
         </div>
     </div>
+
+    <script src="https://cdn.kkiapay.me/k.js"></script>
 @endsection
 
 @section('footer')

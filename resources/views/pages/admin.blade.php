@@ -45,9 +45,9 @@
     
                 <li id="media">
                     <div id="media-title">
-                        <span class="fas fa-film"></span>
-                        <span> Médiathèque </span> 
-                        <span class="fas fa-chevron-down" id="chevron"></span>
+                        <div class="fas fa-film"></div>
+                        <div> Médiathèque </div> 
+                        <div class="fas fa-chevron-down" id="chevron"></div>
                     </div>
 
                     <ul>
@@ -128,6 +128,8 @@
 
     <script>
         $(function(){
+
+            $("ul").css({padding:"0px"});
 
             $("#media").click(function(){
                 $("#media ul").slideToggle(500, function(){
