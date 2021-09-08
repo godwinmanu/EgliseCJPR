@@ -6,21 +6,33 @@
 
 @section('content')
 
-    <div class="donators-container">
+  <div class="donators-container ">
+    <table class="table table-striped">
+      <thead>
+        <tr class="">
+          <th>Noms</th>
+          <th>Prénoms</th>
+          <th>Contact</th>
+          <th>Ville</th>
+          <th>Montant (FCFA)</th>
+          <th>Type de don</th>
+        </tr>
+      </thead>
 
-        @for ($i = 0; $i < 5; $i++)
-            <div class="donator my-3">
-                <div class="gift-icon"> &#x1f381;</div>
-                <div class="donator-infos">
-                    <div class="donator-fullname fw-bold">Jonas JOHN</div>
-                    <a href="tel:+229 97979797" class="donator-contact">+22997979797</a>
-                </div>
-                <div class="other-infos">
-                    <div class="text-uppercase">Lomé (Togo)</div>
-                    <div class="badge bg-warning fs-6">1.000.000 Francs CFA</div>
-                </div>
-            </div>
+      <tbody>
+        @for ($i = 0; $i < 10; $i++)
+          <tr>
+            <td>JOHN</td>
+            <td>Jonas Marc</td>
+            <td>+22997979797</td>
+            <td>Abomey-Calavi</td>
+            <td>100.000</td>
+            <td>Offrande</td>
+          </tr> 
         @endfor
+      </tbody>
+    </table>
+  </div>
+    
 
-    </div>
 @endsection

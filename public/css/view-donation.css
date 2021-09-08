@@ -1,11 +1,9 @@
-.donators-container
+/* .donators-container
 {
-    width: 85%;
-    padding: 0px 5px;
-    justify-self: center;
-}
+    border: 1px solid cornflowerblue;
+} */
 
-.donator
+/* .donator
 {
     display: grid;
     grid-template-columns: 15% auto 15%;
@@ -30,4 +28,4 @@
 .gift-icon
 {
     font-size: 80px;
-}
+} */

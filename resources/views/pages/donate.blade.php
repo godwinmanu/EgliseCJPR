@@ -18,7 +18,7 @@
             <kkiapay-widget amount="1000" 
                             key="f0e123f0099011eca069c75559a38af2"
                             url="<url-vers-votre-logo>"
-                            {{-- position="center" --}}
+                            position="center"
                             sandbox="true"
                             data=""
                             callback="<url-de-redirection-quand-lepaiement-est-reuissi>">

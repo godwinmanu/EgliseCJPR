@@ -6,11 +6,37 @@
 
 @section('content')
 
-    <div class="registered-members">
-        <div class="search-a-member">
-            <input type="text" name="look-for-member" id="look-for-member" placeholder="Rechercher un membre...">
-        </div>
-        
+{{--     <div class="search-a-member">
+        <input type="text" name="look-for-member" id="look-for-member" placeholder="Rechercher un membre...">
+    </div>
+ --}}    <div class="registered-members">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                <th>Noms</th>
+                <th>Prénoms</th>
+                <th>Contact</th>
+                <th>Ville</th>
+                <th>Montant (FCFA)</th>
+                <th>Type de don</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @for ($i = 0; $i < 10; $i++)
+                <tr>
+                    <td class="member-name">JOHN</td>
+                    <td class="member-lastnames">Jonas Marc</td>
+                    <td>+22997979797</td>
+                    <td>Abomey-Calavi</td>
+                    <td member-email>100.000</td>
+                    <td member-contact>Offrande</td>
+                </tr> 
+                @endfor
+            </tbody>
+        </table>
+
         <div class="members-container">
 
             @for ($i = 0; $i < 5; $i++)
