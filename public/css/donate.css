@@ -26,10 +26,8 @@
 
 .payment-space
 {
-    /* border: 1px solid #0abb90; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     padding: 10px;
     row-gap: 20px;
     box-shadow: 2px 2px 5px rgb(182, 181, 181);
