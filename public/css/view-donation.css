@@ -1,31 +1,47 @@
-/* .donators-container
+thead
 {
-    border: 1px solid cornflowerblue;
-} */
-
-/* .donator
-{
-    display: grid;
-    grid-template-columns: 15% auto 15%;
-    box-shadow: 2px 2px 7px rgb(212, 212, 212);
-    border-radius: 10px;
-    padding-right: 15px;
+    background-color: #0abb90;
+    color: white;
 }
 
-.donator-infos, .other-infos
+thead
+{
+    background-color: #0abb90;
+    color: white;
+}
+
+thead tr th, tbody tr td
+{
+   text-align: center;
+}
+
+#treasury-filter
 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 30px;
+    padding-right: 10px;
 }
 
-.other-infos
+#treasury-filter select
 {
-    justify-content: space-around;
-    align-items: flex-end;
+    /* border: 0.5px solid #0abb90; */
+    border: 0.5px solid #adadad;
+    background-color: white;
+    color: rgb(107, 106, 106);
+    outline: none;
+    padding: 5px;
 }
 
-.gift-icon
+#treasury-filter .badge
 {
-    font-size: 80px;
-} */
+    background-color: #0abb90;
+}
+
+.beginning-time-filter,
+.end-time-filter
+{
+   display: flex;
+   flex-direction: row;
+}

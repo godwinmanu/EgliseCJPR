@@ -6,8 +6,6 @@
           <div class="main-address-content">
             <p>+229 97752462</p>
             <p>Info@cjprofficiel.org</p>
-            <p>Temple Refuge des Nations (TRN)</p> 
-            <p>Temple Bethsaleel Israël (TBI)</p>
           </div>
         </div>
         <div class="newsletter">

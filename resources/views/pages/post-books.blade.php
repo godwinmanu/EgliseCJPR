@@ -25,11 +25,29 @@
                 <div class="show-selected-images">
                     <i class="fas fa-cloud-upload-alt"></i>
                 </div>
-                <button class="book-pic">Charger une photo du livre</button>
+                <input type="file" name="book-miniature-input" id="book-miniature-input" accept="image/jpeg, image/png">
+                <label for="book-miniature-input" class="book-pic"> Charger une photo du livre </label>
             </div>
             <div id="validate-button">
                 <button class="validate-upload"> Publier le livre </button>
             </div>
         </div>
     </div>
+
+    <script>
+        let selectedImage = document.getElementById("book-miniature-input");
+        let previewImageBox = document.querySelector(".show-selected-images");
+
+        selectedImage.addEventListener("change", displaySelectedBookMiniature);
+
+        function displaySelectedBookMiniature(){
+            previewImageBox.innerHTML = "";
+            for (let i = 0; i < selectedImage.files.length; i++) {
+                let bookMiniatureImage = document.createElement("img");
+                bookMiniatureImage.src = window.URL.createObjectURL(selectedImage.files[i]);
+                previewImageBox.appendChild(bookMiniatureImage);   
+            }
+        }
+
+    </script>
 @endsection

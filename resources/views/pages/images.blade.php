@@ -17,7 +17,7 @@
             </div> 
             <div>
                 <h4 class="fas fa-times close_displayed-image"></h4>
-                <img src="{{ asset("images/card_3.png") }}" alt="IMAGE" id="image2">
+                <img src="{{ asset("images/card_2.png") }}" alt="IMAGE" id="image2">
             </div> 
             <div>
                 <h4 class="fas fa-times close_displayed-image"></h4>
@@ -151,6 +151,9 @@
         </div>
         <div class="display-selected-image-box">
             <h4 class="fas fa-times close_displayed-image"></h4>
+            <h4 class="fas fa-angle-left display-previous-image"></h4>
+            <h4 class="fas fa-angle-right display-next-image"></h4>
+            
             <div></div>
         </div>
         <div class="album-pagination-container py-3"></div>
@@ -177,20 +180,45 @@
                 var displayed_image = "";
                 $(this).click(function(){
                     displayed_image = $(this);
-                    // $(this).addClass("display");
                     let currentImageSource = displayed_image.prop("src");
                     let selectedImage = document.createElement("img");
                     selectedImage.src = currentImageSource;
                     selectedImage.alt = "IMAGE";
                     $(".display-selected-image-box div").html(selectedImage);
                     $(".display-selected-image-box").show();
-                    // $("body").css({filter : "brightness(50%)"});
                     
-                    $(".display-selected-image-box h4").click(function(){
+                    $(".display-selected-image-box .close_displayed-image").click(function(){
                         document.querySelector(".display-selected-image-box img").remove();
                         $(".display-selected-image-box").hide();
-                    }); 
+                    });
+
+                        $(".display-selected-image-box .fa-angle-left").click(function(){
+                            let previousImageSource = displayed_image.parent().prev().children("img").prop("src");
+                            
+                            if(previousImageSource){
+                                let previousImage = document.createElement("img");
+                                previousImage.src = previousImageSource;
+                                previousImage.alt = "IMAGE";
+                                $(".display-selected-image-box div").html(previousImage);
+                                displayed_image = displayed_image.parent().prev().children("img");
+                            }
+   
+                        });
+
+                        $(".display-selected-image-box .fa-angle-right").click(function(){
+                            let nextImageSource = displayed_image.parent().next().children("img").prop("src");
+                            if(nextImageSource){
+                                let nextImage = document.createElement("img");
+                                nextImage.src = nextImageSource;
+                                nextImage.alt = "IMAGE";
+                                $(".display-selected-image-box div").html(nextImage);
+                                displayed_image = displayed_image.parent().next().children("img");
+                            }
+                        });
+
                 });
+
+                
                 
             });
             

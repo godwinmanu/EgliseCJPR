@@ -5,29 +5,47 @@
 @endsection
 
 @section('content')
-    <div class="commands-container">
-        @for ($i = 0; $i < 5; $i++)
-            <div class="command">
-                <div class="commanded-book">
-                    <span class="fw-bold">LIVRE COMMANDÉ : </span> <strong>La présence de Dieu</strong> 
-                    de <strong>Dr Mamadou Karambiri</strong>
-                </div>
-                <div class="commanded-by">
-                    <span class="fw-bold">COMMANDÉ PAR : </span> Jonas JOHN
-                </div>
-                <div class="client-contact">
-                    <span class="fw-bold">CONTACT DU CLIENT : </span> +22997979797
-                </div>
-                <div class="commanded-quantity">
-                    <span class="fw-bold">QUANTITÉ : </span> 05
-                </div>
-                <div class="client-location">
-                    <span class="fw-bold">LIEU DE LIVRAISON : </span> Godomey
-                </div>
-                <div class="ohter-details">
-                    <span class="fw-bold">DÉTAILS COMPLÉMENTAIRES : </span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam voluptates maxime amet temporibus atque placeat, animi architecto voluptatibus ut molestiae?
-                </div>
-            </div>
+<div class="donators-container ">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nom & Prénoms</th>
+          <th>Livre commandé</th>
+          <th>Quantité</th>
+          <th>Lieu de livraison</th>
+          <th>Contact du client</th>
+          <th>Détails</th>
+          <th>Statut</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        @for ($i = 0; $i < 10; $i++)
+          <tr>
+            <td class="client-fullname">JOHN Jonas Marc</td>
+            <td class="commanded-book">La présence..</td>
+            <td class="quantity"> 05 </td>
+            <td class="client-location">Porto-Novo</td>
+            <td class="client-phone-number">+22997979797</td>
+            <td class="other-details">Je veux...</td>
+            <td>
+                <button class="command-status">En cours</button>
+            </td>
+          </tr> 
         @endfor
-    </div>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+      $(function(){
+          $(".command-status").click(function(){
+              $(this).text("Livré");
+              $(this).css({
+                  border: "0.3px solid #0abb90",
+                  color : "#0abb90"
+                  });
+          });
+      });
+  </script>
 @endsection

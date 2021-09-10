@@ -69,13 +69,6 @@
    display: grid;
 }
 
-.show-selected-images i
-{
-    place-self: center;
-    color: #0abb90;
-    font-size: 60px;
-}
-
 #validate-button
 {   
     width: 100%;
@@ -95,4 +88,28 @@
     border-style: none;
     background-color: #0abb90;
     cursor: pointer;
+}
+
+#video-miniature-input
+{
+    display: none;
+}
+
+.show-selected-images i
+{
+    display: grid;
+    place-items: center;
+    color: #0abb90;
+    font-size: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.show-selected-images img
+{
+    width: 95%;
+    height: 70%;
+    border-radius: 5px;
+    margin: 10px;
 }

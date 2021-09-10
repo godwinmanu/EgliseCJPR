@@ -1,63 +1,21 @@
-/* .registered-members
+thead
 {
-    justify-self: center;
-    width: 65%;
+    background-color: #0abb90;
+    color: white;
 }
 
-.search-a-member
+thead
 {
-    margin: 15px 0px;
-    padding: 15px 20px;
-    box-shadow: 3px 3px 10px rgb(192, 187, 187);
-    border-radius: 30px;
-    margin-bottom: 30px;
+    background-color: #0abb90;
+    color: white;
 }
 
-#look-for-member
+thead tr th, tbody tr td
 {
-    width: 90%;
-    border-style: none;
-    outline: none;
+   text-align: center;
 }
 
-.members-container
+.delete-member
 {
-    height: 80%;
-    padding: 0px 5px;
-    overflow-y: auto;
+    cursor: pointer;
 }
-
-.members-container::-webkit-scrollbar
-{
-    display: none;
-}
-
-.member
-{
-    display: grid;
-    grid-template-columns: 15% auto 5%;
-    column-gap: 10px;
-    box-shadow: 2px 2px 7px rgb(212, 212, 212);
-    border-radius: 10px;
-}
-
-.member-profile-picture img
-{
-    width: 100%;
-    height: 100%;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.member-infos, .config-member-button
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.config-member-button
-{
-    justify-content: space-around;
-}
- */

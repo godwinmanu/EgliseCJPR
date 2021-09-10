@@ -14,12 +14,12 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                <th>Noms</th>
+                <th>Nom</th>
                 <th>Prénoms</th>
                 <th>Contact</th>
+                <th>Email</th>
                 <th>Ville</th>
-                <th>Montant (FCFA)</th>
-                <th>Type de don</th>
+                <th>Supprimer</th>
                 </tr>
             </thead>
 
@@ -29,9 +29,9 @@
                     <td class="member-name">JOHN</td>
                     <td class="member-lastnames">Jonas Marc</td>
                     <td class="member-tel">+22997979797</td>
-                    <td class="member-email">Abomey-Calavi</td>
-                    <td class="member-email">100.000</td>
-                    <td class="member-contact">Offrande</td>
+                    <td class="member-email">adresse@gmail.com</td>
+                    <td class="member-city">Cotonou</td>
+                    <td><i class="delete-member text-danger fas fa-trash"></i></td>
                 </tr> 
                 @endfor
             </tbody>

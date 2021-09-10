@@ -26,7 +26,55 @@
 
 .payment-space
 {
-    border: 1px solid #8d191c;
+    /* border: 1px solid #0abb90; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    padding: 10px;
+    row-gap: 20px;
+    box-shadow: 2px 2px 5px rgb(182, 181, 181);
+}
+
+.payment-space input,
+.payment-space select
+{
+    padding: 5px;
+    outline: none;
+    border-radius: 3px;
+    border: 0.5px solid rgb(180, 178, 178);
+    background-color: white;
+}
+
+.payment-space input:focus, 
+.payment-space select:focus
+{
+    border: 1px solid #0abb90;
+}
+
+.payment-space div > *
+{
+    display: inline-block;
+}
+
+.kkiapay-button
+{   
+    text-transform: uppercase; 
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px 0px;
+    outline: none;
+    border-style: none;
+    background-color: #0abb90;
+    cursor: pointer;
+}
+
+.kkiapay-button:hover
+{
+    background-color: #fff;
+    color: #0abb90;
+    border: 1px solid #0abb90;
+    
 }
 
 .other-payment-methods
@@ -53,3 +101,4 @@
 {
     text-align: justify;
 }
+ 

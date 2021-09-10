@@ -1,19 +1,55 @@
-.commands-container
+thead
 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    align-items: center;
-    margin-top: 20px;
+    background-color: #0abb90;
+    color: white;
 }
 
-.command
+thead tr th, tbody tr td
 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    box-shadow: 2px 2px 10px rgb(201, 198, 198);
-    padding: 20px;
+   text-align: center;
+}
+
+thead tr th:nth-child(1)
+{
+    width: 17%;
+}
+
+thead tr th:nth-child(2)
+{
+    width: 16%;
+}
+
+thead tr th:nth-child(3)
+{
+    width: 11%;
+}
+
+thead tr th:nth-child(4)
+{
+    width: 17%;
+}
+
+thead tr th:nth-child(5)
+{
+    width: 17%;
+}
+
+thead tr th:nth-child(6)
+{
+    width: auto;
+}
+
+thead tr th:nth-child(7)
+{
+    width: auto;
+}
+
+.command-status
+{
+    padding: 5px 15px;
+    outline: none;
+    border: 0.3px solid #8d191c;
+    background-color: white;
+    color: #8d191c;
     border-radius: 5px;
-    width: 70%;
 }
