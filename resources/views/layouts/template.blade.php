@@ -11,7 +11,7 @@
       <script src="{{ asset("js/bootstrap.min.js") }}"></script>
       <link rel="stylesheet" href="{{ asset("Font awesome/css/all.min.css") }}">
       <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
-      <link rel="shortcut icon" href="{{ asset("images/icon_cjpr.png") }}">
+      <link rel="shortcut icon" href="{{ asset("images/logo_cjpr.png") }}">
       <link rel="stylesheet" href="{{ asset("css/style.css") }}">
       @yield('stylesheet')
 </head>
