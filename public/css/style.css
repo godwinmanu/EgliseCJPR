@@ -148,6 +148,7 @@ a {
 
 .about-us p {
     text-align: justify;
+    padding: 0% 9%;
 }
 
 .section-title {
@@ -236,13 +237,20 @@ a {
     transition: 1s transform;
 }
 
+.newInKingdom
+{
+    display: grid;
+}
+
 .lessons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
+    grid-template-columns: repeat(3, 30%);
+    gap: 30px;
+    place-content: center;
     background: url(../images/bg_kingdom.png);
     background-size: 100% 100%;
+    width: 90%;
+    justify-self: center;
 }
 
 .lesson img {
@@ -257,8 +265,9 @@ a {
 
 .testimonieSpace {
     display: flex;
+    flex-wrap: wrap;
     padding: 50px;
-    column-gap: 20px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -523,21 +532,38 @@ footer {
     gap: 30px;
 }
 
-.input-group > button {
+.input-group{
+    display: grid;
+    grid-template-columns: auto 30%;
+}
+
+.input-group > input {
+    width: 100% !important;
+    outline: none !important;
+    border: 1px solid #09d194;
+    padding: 3px;
+}    
+
+.input-group > .submit-email {
+    outline: none !important;
+    border-style: none !important;
     padding: 0px 10px;
     border-style: none;
     background-color: #09d194;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+}   
+
+.lets-be-connected-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.lets-be-connected-content a {
-    font-size: 40px;
-}
-
+.lets-be-connected-content a,
 .lets-be-connected-content i {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }
 
@@ -677,4 +703,198 @@ footer {
     cursor: pointer;
 }
 
-/* Responsive */
+
+.fa-bars{
+    display: none;
+}
+
+/* ======================= Reponsive ================ */
+@media screen and (max-width : 575px){
+
+    .main{
+        padding: 0px !important;
+        /* width: 100vw; */
+    }
+
+    nav{
+        position: fixed;
+        top: 0px;
+        padding-right: 10px;
+    }
+
+    nav .navBarItem{
+        display: none;
+    }
+
+    #menu-bars{
+        justify-self: end;
+        align-self: center;
+    }
+
+    .fa-bars{
+        display: block;
+        border-style: none;
+        outline: none;
+        padding: 5px;
+        font-size: 25px;
+        border-radius: 5px;
+    }
+
+    .navBarElements {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+
+    .books-content {
+        justify-content: center;
+        /* justify-items: start;
+        border: 1px solid black;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        white-space: nowrap;
+ */
+    }
+
+    .book {
+        width: 200px;
+        height: 270px;
+        grid-template-rows: 70% auto;
+        box-shadow: 1px 1px 5px rgb(163, 162, 162);
+        place-self: center;
+    }
+    
+    .messagesOnMainPage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .singleMessage {
+        width: 80%;
+        /* height: 270px; */
+        grid-template-rows: 55% auto;
+    }
+
+    .lessons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+        padding: 10px !important;
+
+    }
+
+    .testimonieSpace {
+        display: flex;
+        /* flex-wrap: wrap; */
+        padding: 0px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .singleTestimony {
+        width: 250px;
+        height: 370px;
+        display: grid;
+        grid-template-rows: 20% auto 20%;
+    }
+
+    .testimonyContent span {
+        font-size: 25px;
+        text-align: end;
+        position: relative;
+        left: 45%;
+        top: 3%;
+        color: #0abb90;
+        cursor: pointer;
+    }
+
+    .carousel-item > img {
+        height: 200px;
+        width: 100%;
+        filter: brightness(60%);
+    }
+
+    .slide-arrow
+    {
+        font-size: 15px;
+        padding: 7px 14px;
+    }
+ 
+    .filter {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .filter select{
+        padding: 5px;
+        background-color: white;
+        outline: none;
+        border : 0.5px solid #8d191c;
+        width: 100%;
+    }
+    
+    .form form {
+        width: 90%;
+        display: grid;
+        justify-content: center;
+
+    }
+
+    .userInfos {
+        display: grid;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .userInfos > *{
+        width: 100% !important;
+
+    }
+    
+    .testimony-pagination-container,
+    .messages-pagination-container,
+    .library-pagination-container {
+        display: none;
+        width: 20%;
+        justify-content: center;
+    }
+
+    .churchInfos .churchInfos-child:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        row-gap: 20px;
+    }
+
+    .main-address,
+    .newsletter,
+    .lets-be-connected {
+        grid-template-rows: 20% auto;
+        row-gap: 10px;
+    }
+
+    .main-address-content,
+    .newsletter-content{
+        text-align: center;
+    }
+
+    .newsletter-content {
+        gap: 10px;
+    }
+
+    .lets-be-connected-content i{
+        font-size: 23px;
+    }
+    
+    .copyright{
+        font-size: 14px;
+    }
+ 
+
+    
+}

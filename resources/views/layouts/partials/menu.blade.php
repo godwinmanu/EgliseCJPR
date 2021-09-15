@@ -36,15 +36,35 @@
             <li> <a class="btn log-in-link" href="{{ route("login") }}"> SE CONNECTER </a> </li>
         </ul>
     </div>
+    
+    <div id="menu-bars">
+        <button class="fas fa-bars"></button>
+    </div>
+
 </nav>
 
 <script>
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 100 ){
-            $("nav").addClass("scrolled");
-        }
-        else{
-            $("nav").removeClass("scrolled");
-        }
+    let userScreenWidth = screen.width;
+
+    if(userScreenWidth > 576){
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 100 ){
+                $("nav").addClass("scrolled");
+            }
+            else{
+                $("nav").removeClass("scrolled");
+            }
+        });
+    }
+    // else{
+
+    // }
+    
+
+    $(function(){
+        $(".fa-bars").click(function(){
+            $("nav").slideToggle();
+            // $(".navBarElements").slideToggle();
+        });
     });
 </script>

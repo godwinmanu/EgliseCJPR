@@ -61,13 +61,15 @@
     </span>
   </div>
   <div class="main px-5">
-    <div class="about-us text-center">
-        <div class="section-title">
+    <div class="about-us text-center mb-5">
+        <div class="section-title my-3">
             <h1> A propos</h1>
             <div class="trait"></div> <br>
         </div>
         <p>
+          {!! Str::limit('
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error voluptas non rerum fugit aperiam ipsa, eveniet minus ab corrupti labore quia atque eius qui illum voluptatibus quaerat architecto ut odit asperiores necessitatibus quos id. Aliquid illum praesentium voluptatibus eius sed, eum nam dicta animi est incidunt debitis! Amet laudantium praesentium, ut suscipit, modi corrupti atque nobis non exercitationem ea enim sequi sit aliquid necessitatibus alias vitae veritatis impedit consectetur rem consequatur eveniet. Sed beatae ex aut, vitae nisi dignissimos, nihil sequi veritatis commodi ipsam molestias reprehenderit inventore minima voluptatem iste molestiae quis iusto cum incidunt, voluptatum illum deserunt adipisci. Assumenda, pariatur? Molestias eligendi aut ipsam est nesciunt a, fuga quaerat. Quaerat asperiores maxime ipsum ratione deserunt blanditiis est, ipsam, beatae quae, officia neque eligendi in ad ex temporibus dolores. Beatae eos earum accusamus reprehenderit, maiores reiciendis culpa voluptatibus quasi, qui dolorum itaque! Laudantium voluptatem quam officiis quos ipsum, repellat vero tenetur in ut doloribus vel quae ad? Minus, ut cumque rerum quia a saepe, voluptate, adipisci maxime iure ea perspiciatis reprehenderit maiores odio nostrum necessitatibus vel fugit. Incidunt, amet modi maiores voluptates, molestias neque eum alias possimus eaque obcaecati dolorum libero itaque! Amet molestiae at unde. Corrupti quaerat explicabo officia?
+          ', 350) !!}
             <a href="{{ url("about-us") }}">lire plus</a>                
         </p>
     </div>
@@ -78,14 +80,14 @@
         </div>
       
         <div class="Messages pb-4">
-              <div class="filter pb-3 mt-5">
-                <select name="orateur" class="form-select">
+              <div class="filter pb-3 mt-3">
+                <select name="orateur">
                   <option disabled selected>Orateurs</option>
                   <option value="">Edgar</option>
                   <option value="">Marc</option>
                   <option value="">Raoul WAFO</option>
                 </select>
-                <select name="serie" class="form-select">
+                <select name="serie">
                   <option disabled selected>Séries</option>
                   <option value="">Croisade 2020-2021</option>
                   <option value="">Séminaire 2019-2020 (Jeune Lève toi)</option>
@@ -205,7 +207,7 @@
     </div>
     <div class="newInKingdom">
         <div class="section-title">
-            <h1> Nouveau dans le Royaume</h1>
+            <h1 class="text-center"> Nouveau dans le Royaume</h1>
             <div class="trait"></div> <br>
             <p>Que dois-je savoir ?</p>
 
@@ -349,7 +351,7 @@
         </div>
     </div>
     <div class="library">
-        <div class="section-title">
+        <div class="section-title mb-3">
             <h1> Librairie RHEMA</h1>
             <div class="trait"></div> <br>
         </div>
@@ -465,7 +467,7 @@
   </div>
 
   <div class="join-us mb-5" id="join-us">
-      <div class="section-title">
+      <div class="section-title mb-3">
           <h1> Contactez-nous</h1>
           <div class="trait"></div> <br>
       </div>
@@ -487,65 +489,86 @@
 
   <script>
     $(function(){
-      // Pagination for testimoies
-      let testimonies = $(".singleTestimony");
-      let testimoniesNumber = testimonies.length;;
-      let testimonyperPage  = 3;
+      let userScreenWidth = screen.width;
 
-      testimonies.slice(testimonyperPage ).hide();
+      // if(userScreenWidth > 576){
+        let testimonyperPage;
+        let messageperPage;
+        let bookperPage;
 
-      $(".testimony-pagination-container").pagination({
-        items : testimoniesNumber,
-        itemsOnPage : testimonyperPage ,
-        prevText : "<<",
-        nextText : ">>",
-        onPageClick : function(pageNumber)
-        {
-          let showFrom = testimonyperPage  * (pageNumber - 1);
-          let showTo = showFrom + testimonyperPage ;
-          testimonies.hide().slice(showFrom, showTo).show();
+        // Pagination for testimoies
+        let testimonies = $(".singleTestimony");
+        let testimoniesNumber = testimonies.length;
+        if(userScreenWidth < 576){
+          testimonyperPage  = 1;
+          messageperPage = 1;
+          bookperPage = 1;
         }
-      });
-
-      // Pagination for recent messages 
-      let messages = $(".singleMessage");
-      let messagesNumber = messages.length;
-      let messageperPage = 9;
-
-      messages.slice(messageperPage).hide();
-
-      $(".messages-pagination-container").pagination({
-        items : messagesNumber,
-        itemsOnPage : messageperPage,
-        prevText : "<<",
-        nextText : ">>",
-        onPageClick : function(pageNumber)
-        {
-          let showFrom = messageperPage * (pageNumber - 1);
-          let showTo = showFrom + messageperPage;
-          messages.hide().slice(showFrom, showTo).show();
+        else if( userScreenWidth >= 576 && userScreenWidth < 768){
+          testimonyperPage  = 2;
+          messageperPage = 2;
+          bookperPage = 2;
         }
-      });
-
-      // Pagination for books
-      let books = $(".book");
-      let booksNumber = books.length;
-      let bookperPage = 5;
-
-      books.slice(bookperPage).hide();
-
-      $(".library-pagination-container").pagination({
-        items : booksNumber,
-        itemsOnPage : bookperPage,
-        prevText : "<<",
-        nextText : ">>",
-        onPageClick : function(pageNumber)
-        {
-          let showFrom = bookperPage * (pageNumber - 1);
-          let showTo = showFrom + bookperPage;
-          books.hide().slice(showFrom, showTo).show();
+        else{
+          testimonyperPage  = 3;
+          messageperPage = 9;
+          bookperPage = 5;
         }
-      });
+
+        testimonies.slice(testimonyperPage ).hide();
+
+        $(".testimony-pagination-container").pagination({
+          items : testimoniesNumber,
+          itemsOnPage : testimonyperPage ,
+          prevText : "<<",
+          nextText : ">>",
+          onPageClick : function(pageNumber)
+          {
+            let showFrom = testimonyperPage  * (pageNumber - 1);
+            let showTo = showFrom + testimonyperPage ;
+            testimonies.hide().slice(showFrom, showTo).show();
+          }
+        });
+
+        // Pagination for recent messages 
+        let messages = $(".singleMessage");
+        let messagesNumber = messages.length;
+
+        messages.slice(messageperPage).hide();
+
+        $(".messages-pagination-container").pagination({
+          items : messagesNumber,
+          itemsOnPage : messageperPage,
+          prevText : "<<",
+          nextText : ">>",
+          onPageClick : function(pageNumber)
+          {
+            let showFrom = messageperPage * (pageNumber - 1);
+            let showTo = showFrom + messageperPage;
+            messages.hide().slice(showFrom, showTo).show();
+          }
+        });
+
+        // Pagination for books
+        let books = $(".book");
+        let booksNumber = books.length;
+
+        books.slice(bookperPage).hide();
+
+        $(".library-pagination-container").pagination({
+          items : booksNumber,
+          itemsOnPage : bookperPage,
+          prevText : "<<",
+          nextText : ">>",
+          onPageClick : function(pageNumber)
+          {
+            let showFrom = bookperPage * (pageNumber - 1);
+            let showTo = showFrom + bookperPage;
+            books.hide().slice(showFrom, showTo).show();
+          }
+        });
+      // }
+      
 
       // setTimeout(popupNewsletter, 5000);
 

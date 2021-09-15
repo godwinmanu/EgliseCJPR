@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
       <link rel="shortcut icon" href="{{ asset("images/logo_cjpr.png") }}">
       <link rel="stylesheet" href="{{ asset("css/style.css") }}">
+      {{-- <link rel="stylesheet" media="screen and (max-width : 575px)" href="{{ asset("css/miniphone.css") }}"> --}}
       @yield('stylesheet')
 </head>
 <body>
