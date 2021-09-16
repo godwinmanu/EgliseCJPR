@@ -75,3 +75,8 @@ form+div > a
 {
     text-decoration: underline;
 }
+
+.connexion-links{
+    display: flex;
+    column-gap: 20px;
+}
