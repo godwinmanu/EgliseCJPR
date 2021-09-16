@@ -80,3 +80,12 @@ form+div > a
     display: flex;
     column-gap: 20px;
 }
+
+
+/* ======================= Reponsive ================ */
+@media screen and (max-width : 575px){
+    .sign-space{
+        width: 90%;
+        justify-self: center;
+    }
+}
