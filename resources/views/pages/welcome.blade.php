@@ -101,7 +101,11 @@
                     <i class="fas fa-play"></i>
                   </a>
                   <div class="messageInfos pt-2 px-2">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!</p>
+                    <p> 
+                      {!! Str::limit('
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!
+                      ',100) !!} 
+                    </p>
                     <div class="additionnalInfos">
                       <div class="fw-bold">Pasteur Hermione GUIDIBI</div>
                       <small> 10 Août 2021</small>
@@ -114,7 +118,11 @@
                     <i class="fas fa-play"></i>
                   </a>
                   <div class="messageInfos pt-2 px-2">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!</p>
+                    <p> 
+                      {!! Str::limit('
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!
+                      ',100) !!} 
+                    </p>
                     <div class="additionnalInfos">
                       <div class="fw-bold">Pasteur Hermione GUIDIBI</div>
                       <small> 10 Août 2021</small>
@@ -127,7 +135,11 @@
                     <i class="fas fa-play"></i>
                   </a>
                   <div class="messageInfos pt-2 px-2">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!</p>
+                    <p> 
+                      {!! Str::limit('
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!
+                      ',100) !!} 
+                    </p>
                     <div class="additionnalInfos">
                       <div class="fw-bold">Pasteur Hermione GUIDIBI</div>
                       <small> 10 Août 2021</small>
@@ -140,7 +152,11 @@
                     <i class="fas fa-play"></i>
                   </a>
                   <div class="messageInfos pt-2 px-2">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!</p>
+                    <p> 
+                      {!! Str::limit('
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!
+                      ',100) !!} 
+                    </p>
                     <div class="additionnalInfos">
                       <div class="fw-bold">Ev Reynold TOKANOU </div>
                       <small> 10 Août 2021</small>
@@ -153,7 +169,11 @@
                     <i class="fas fa-play"></i>
                   </a>
                   <div class="messageInfos pt-2 px-2">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!</p>
+                    <p> 
+                      {!! Str::limit('
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!
+                      ',100) !!} 
+                    </p>
                     <div class="additionnalInfos">
                       <div class="fw-bold">Pasteur Hermione GUIDIBI</div>
                       <small> 10 Août 2021</small>
@@ -166,7 +186,11 @@
                     <i class="fas fa-play"></i>
                   </a>
                   <div class="messageInfos pt-2 px-2">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!</p>
+                    <p> 
+                      {!! Str::limit('
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!
+                      ',100) !!} 
+                    </p>
                     <div class="additionnalInfos">
                       <div class="fw-bold">Pasteur Hermione GUIDIBI</div>
                       <small> 10 Août 2021</small>
@@ -179,7 +203,11 @@
                     <i class="fas fa-play"></i>
                   </a>
                   <div class="messageInfos pt-2 px-2">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!</p>
+                    <p> 
+                      {!! Str::limit('
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!
+                      ',100) !!} 
+                    </p>
                     <div class="additionnalInfos">
                       <div class="fw-bold">Pasteur Hermione GUIDIBI</div>
                       <small> 10 Août 2021</small>
@@ -192,7 +220,11 @@
                     <i class="fas fa-play"></i>
                   </a>
                   <div class="messageInfos pt-2 px-2">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!</p>
+                    <p> 
+                      {!! Str::limit('
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ab consequuntur quasi architecto. Voluptate assumenda soluta laudantium expedita laborum ratione!
+                      ',100) !!} 
+                    </p>
                     <div class="additionnalInfos">
                       <div class="fw-bold">Ev Reynold TOKANOU</div>
                       <small> 10 Août 2021</small>

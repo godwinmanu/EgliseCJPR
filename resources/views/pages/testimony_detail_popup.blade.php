@@ -1,5 +1,3 @@
-@extends("layouts.template")
-
 <div id="testimony_detail_popup" class="modal">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">

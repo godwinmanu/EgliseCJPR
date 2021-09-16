@@ -3,7 +3,13 @@
         <a href="{{ route("welcome") }}">
             <img src="{{ asset("images/logo_cjpr.png") }}" alt="LOGO CJPR" width="100" height="70">
         </a>
+
+        <div id="menu-bars">
+            <i class="fas fa-bars text-light"></i>
+        </div>
     </div>
+
+    
 
     <div class="navBarItem">
         <ul class="navBarElements">
@@ -33,20 +39,16 @@
             <li> <a href="{{ url("donate") }}" class="text-uppercase">Faire un don</a></li>
             <li> <a href="/#join-us" class="text-uppercase">Contacts</a></li>
             <li id="signup-li"> <a href="{{ route("signup") }}" class="sign-up-link"> S'INSCRIRE </a> </li>
-            <li> <a class="btn log-in-link" href="{{ route("login") }}"> SE CONNECTER </a> </li>
+            <li id="log-in-link"> <a href="{{ route("login") }}"> SE CONNECTER </a> </li>
         </ul>
     </div>
-    
-    <div id="menu-bars">
-        <button class="fas fa-bars"></button>
-    </div>
 
+    
+    
 </nav>
 
 <script>
-    let userScreenWidth = screen.width;
-
-    if(userScreenWidth > 576){
+    $(function(){
         $(window).scroll(function(){
             if($(this).scrollTop() > 100 ){
                 $("nav").addClass("scrolled");
@@ -55,16 +57,50 @@
                 $("nav").removeClass("scrolled");
             }
         });
-    }
-    // else{
 
-    // }
-    
+        let userDeviceWidth = screen.width;
+        if(userDeviceWidth < 575){
 
-    $(function(){
-        $(".fa-bars").click(function(){
-            $("nav").slideToggle();
-            // $(".navBarElements").slideToggle();
-        });
+            $("nav .fa-bars").click(function(){
+                $("nav .fa-angle-down").prop("class"," fas fa-chevron-right");
+                if($("nav .navBarItem").is(":hidden")){
+                    $("nav").css({backgroundColor: "#8d191c"});
+                    $("nav .navBarItem").slideDown(500);
+                }
+                else{
+                    $("nav .navBarItem").slideUp(500);
+                }
+
+                $(".main").click(function(){
+                    $("nav .navBarItem").slideUp(500);
+                });
+            });
+
+            $(".eglises").click(function(){
+                $(".churchesSubMenu").slideToggle(300, function(){
+                    if($(this).is(":hidden")){
+                        $(".eglises .fa-chevron-down").prop("class"," fas fa-chevron-right");
+                    }
+                    else{
+                        $(".eglises .fa-chevron-right").prop("class"," fas fa-chevron-down");
+                    }
+                });
+            });
+
+            $(".mediatheque").click(function(){
+                $(".mediathequeSubMenu").slideToggle(300, function(){
+                    if($(this).is(":hidden")){
+                        $(".mediatheque .fa-chevron-down").prop("class"," fas fa-chevron-right");
+                    }
+                    else{
+                        $(".mediatheque .fa-chevron-right").prop("class"," fas fa-chevron-down");
+                    }
+                });
+            });
+
+
+        }
+
+        
     });
 </script>

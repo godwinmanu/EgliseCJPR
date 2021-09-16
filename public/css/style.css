@@ -645,12 +645,7 @@ footer {
     border-bottom: 0px;
     background-color: #f8db00;
     color: black;
-} 
-
-#signup-li + li a:hover{
-    transform: scale(1.1);
-    transition: transform 1s;
-} 
+}  
 
 .annonces
 {
@@ -703,6 +698,16 @@ footer {
     cursor: pointer;
 }
 
+#log-in-link a{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f8db00;
+}
+
+#log-in-link a:hover{
+    background-color: white;
+    color: black;
+}
 
 .fa-bars{
     display: none;
@@ -717,13 +722,82 @@ footer {
     }
 
     nav{
+        display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0px;
         padding-right: 10px;
     }
 
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo img{
+        width: 70px;
+        height: 50px;
+    }
+
+    nav.scrolled
+    {
+        transform: scale(1);
+        background-color: #8d191c;
+    }
+
     nav .navBarItem{
         display: none;
+        width: 100%;
+        padding: 0px;
+    }
+
+    nav .navBarItem .navBarElements{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBarElements {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        list-style: none;
+        padding-left: 0px;
+        margin: 0px;
+
+    }
+
+    .navBarElements li{
+        padding: 10px;
+        width: 100%;
+        border-bottom: 0.1px solid rgb(223, 221, 221);
+    }
+
+    .navBarElements li a{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    }
+
+    .navBarElements li a:hover{
+        border: 0px;
+        color: #f8db00;
+    }
+
+    #log-in-link a{
+        border-radius: 0px;
+        background-color: #8d191c !important;
+        color: #f8db00 !important;
+        padding: 0px;
+    }
+    
+    #log-in-link a:hover{
+        background-color: transparent;
+    }
+
+    #signup-li{
+        padding-left: 10px;
     }
 
     #menu-bars{
@@ -732,22 +806,54 @@ footer {
     }
 
     .fa-bars{
+        cursor: pointer;
         display: block;
         border-style: none;
         outline: none;
         padding: 5px;
-        font-size: 25px;
+        font-size: 30px;
         border-radius: 5px;
     }
 
-    .navBarElements {
+    .mediathequeSubMenu,
+    .churchesSubMenu {
+        display: none;
+        list-style-type: none;
+        background-color: transparent;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: unset;
+        z-index: 0;
+        box-shadow: none;
+        position: relative;
+        top: 0;
+        padding-left: 0px;
+    }
+    
+    .mediatheque:hover .mediathequeSubMenu,
+    .eglises:hover .churchesSubMenu{
+        display: none;
+    }
+    
+    .mediathequeSubMenu a,
+    .churchesSubMenu a {
+        color: white;
+    }
+    
+    .mediathequeSubMenu li,
+    .churchesSubMenu li {
+        padding-left: 0px;
+        border-bottom: 0px;
+    }
+    
+    .mediathequeSubMenu li:hover a,
+    .churchesSubMenu li:hover a {
+        color: white;
     }
 
+    /* ================ MAIN ========================== */
+    
+    
     .books-content {
         justify-content: center;
         /* justify-items: start;
@@ -870,7 +976,10 @@ footer {
         padding: 0px 20px;
         row-gap: 20px;
     }
-
+    
+    
+    /* =============== FOOTER =============== */
+    
     .main-address,
     .newsletter,
     .lets-be-connected {
