@@ -12,7 +12,7 @@
 {
     padding-top: 50px;
     font-size: 80px;
-    font-weight: bold;
+    font-family: "Poppins-Bold";
     color: white;
 }
 
@@ -50,12 +50,6 @@
     text-align: justify;
 }
 
-.church_social_network > img
-{
-    width: 50px;
-    height: 50px;
-}
-
 .about-us-title
 {
     display: grid;
@@ -64,7 +58,7 @@
 .about-us-title h5
 {
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: "Poppins-Bold";
     text-align: center;
 }
 
@@ -74,4 +68,57 @@
     width: 7%;
     height: 5px;
     place-self: center;
+}
+
+.lets-be-connected-content a,
+.lets-be-connected-content i{
+    color: black ;
+}
+
+/* ======================= Reponsive ================ */
+@media screen and (max-width : 575px){
+
+    #exhibition-image
+    {
+        height: 200px;
+    }
+
+    #exhibition-image div
+    {
+        font-size: 40px;
+    }
+    
+    .about-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_image
+    {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        place-content: center;
+        place-self: center;
+        font-size: 20px;
+    }
+    
+    .about_text
+    {
+        padding: 25px;
+    }
+
+    .lets-be-connected-content .fa-facebook
+    {
+        color: #4267B2;
+    }
+
+    .lets-be-connected-content .fa-youtube
+    {
+        color: #ff0000;
+    }
+
 }
