@@ -8,7 +8,7 @@
     <div class="sign-space">
         <div class="signing-in">
             <a href="">
-                <img src="{{ asset("images/logo_cjpr.png") }}" alt="LOGO CJPR" width="200" height="130">
+                <img src="{{ asset("images/logo_cjpr.png") }}" alt="LOGO CJPR">
             </a>
             <form action="#" method="" id="login-form">
                 <input type="email" name="email" id="email" placeholder="Adresse mail">
