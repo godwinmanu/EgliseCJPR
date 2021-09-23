@@ -100,3 +100,42 @@
     text-align: justify;
 }
  
+
+/* ======================= Reponsive ================ */
+@media screen and (max-width : 575px){
+
+    #exhibition-image
+    {
+        height: 200px;
+    }
+
+    #exhibition-image div
+    {
+        font-size: 23px;
+    }
+
+    #exhibition-image + div
+    {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .other-payment-methods
+    {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+
+    
+    .payment-methods > *
+    {
+        width: 100px;
+        height: 60px;
+    }
+    
+}
