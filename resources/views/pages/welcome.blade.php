@@ -214,6 +214,7 @@
                     </div>
                   </div>
                 </div>
+                @for ($i = 0; $i < 20; $i++)
                 <div class="singleMessage">
                   <a href=" {{ url('video-stream', "id_video") }}" >
                     <img src="{{ asset("images/card_3.png") }}" alt="IMAGE">
@@ -231,7 +232,9 @@
                     </div>
                   </div>
                 </div>
+                @endfor
               </div>
+
               <div class="messages-pagination-container"></div>
               
         </div>
@@ -533,7 +536,7 @@
         let testimoniesNumber = testimonies.length;
         if(userScreenWidth < 576){
           testimonyperPage  = 1;
-          messageperPage = 1;
+          messageperPage = 4;
           bookperPage = 1;
         }
         else if( userScreenWidth >= 576 && userScreenWidth < 768){
