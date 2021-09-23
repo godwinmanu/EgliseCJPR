@@ -18,19 +18,19 @@
 
         <div class="videos-and-filters pt-3">
             <div class="filters">
-                <select name="orators" class="form-select">
+                <select name="orators">
                     <option selected disabled> Orateurs </option>
                     <option value="Hermione"> Pasteur Hermione GUIDIBI </option>
                     <option value="Edgard"> Pasteur Edgard GUIDIBI </option>
                     <option value="Reynold"> Ev Reynold TOKANOU </option>
                 </select>
-                <select name="series" class="form-select">
+                <select name="series">
                     <option selected disabled> Séries </option>
                     <option value="read"> LIRE ET MÉDITER LA BIBLE POUR DEVENIR UN GÉANT SPIRITUEL </option>
                     <option value="young"> Séminaire 2019-2020 (Jeune lève toi) </option>
                     <option value="ladies"> Femmes...... </option>
                 </select>
-                <select name="Months" class="form-select">
+                <select name="Months">
                     <option selected disabled> Mois </option>
                     <option value="Jan"> Janvier </option>
                     <option value="Feb"> Février </option>
@@ -45,7 +45,7 @@
                     <option value="Nov"> Novembre </option>
                     <option value="Dec"> Décembre </option>
                 </select>
-                <select name="Years" class="form-select">
+                <select name="Years">
                     <option selected disabled> Années </option>
                     <option value="2019"> 2019 </option>
                     <option value="2020"> 2020 </option>
@@ -166,9 +166,21 @@
     <script>
         $(function(){
             // Pagination for videos in Médiathèque
+
+            let userScreenWidth = screen.width;
+            let videoperPage;
+
+            if(userScreenWidth < 576){
+                videoperPage = 10;
+            }
+            else if( userScreenWidth >= 576 && userScreenWidth < 768){
+                videoperPage = 3;
+            }
+            else{
+                videoperPage  = 8;
+            }
             let videos = $(".video");
             let videosNumber = videos.length;;
-            let videoperPage  = 8;
 
             videos.slice(videoperPage ).hide();
 

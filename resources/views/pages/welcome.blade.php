@@ -538,12 +538,12 @@
         }
         else if( userScreenWidth >= 576 && userScreenWidth < 768){
           testimonyperPage  = 2;
-          messageperPage = 2;
+          messageperPage = 6;
           bookperPage = 2;
         }
         else{
           testimonyperPage  = 3;
-          messageperPage = 9;
+          messageperPage = 6;
           bookperPage = 5;
         }
 

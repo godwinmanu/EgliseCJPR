@@ -1,3 +1,7 @@
+.images-space{
+    display: grid;
+}
+
 #exhibition-image
 {
     height: 400px;
@@ -131,7 +135,6 @@
     gap: 20px;
     z-index: 30000;
     padding: 50px;
-
 }
 
 .album-container img
@@ -190,7 +193,6 @@
     background-color: white;
     border-radius: 25px;
     opacity: 0.6;
-
 }
 
 .fa-angle-left:hover,
@@ -280,8 +282,7 @@
 {
     margin-right: 100px;
     gap: 20px;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .album_filter select
@@ -293,4 +294,147 @@
     outline: none;
     background-color: white;
     color: black;
+}
+
+
+/* ======================= Reponsive ================ */
+
+@media screen and (max-width : 575px){
+
+    nav{
+        width: 100vw;
+    }    
+
+    #exhibition-image
+    {
+        height: 200px;
+        padding: 0px;
+        display: grid;
+        justify-items: center;
+    }
+
+    #exhibition-image div:nth-child(1)
+    {
+        padding-top: 100px;
+        font-size: 30px;
+    }
+
+    #exhibition-image div:nth-child(2)
+    {
+        font-size: 17px;
+    }
+
+    .images-content
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 7px;
+        padding: 5px;
+        justify-content: start;
+    }
+    
+    .album
+    {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 80% 20%;
+    }
+    
+    .last-image-of-album > img:hover
+    {
+        box-shadow: 1px 1px 5px gray;
+        transform: scale(1);
+    }
+
+    .album_filter
+    {
+        margin-right: 5px;
+        margin-bottom: 10px;
+        gap: 15px;
+        align-items: center;   
+    }
+ 
+    .images-number
+    {   
+        position: relative;
+        bottom: 65%;
+        left: 40%;
+        color: white;
+        z-index: 10;
+    }
+
+    .selected-album
+    {
+        position: fixed;
+        left: 2%;
+        top: 7%;
+        place-self: center;
+        width: 80%;
+        height: 76%;
+        display: grid;
+        grid-template-rows: 90% 10%;
+        border: 1px solid #dfdbdb;
+        box-shadow: 1px 2px 3px ghostwhite;
+        z-index: 20000;
+        border-radius: 5px;
+    }
+
+    .album-container
+    {
+        background-color: #f6f8f9;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        z-index: 30000;
+        padding: 10px;
+        overflow-y: auto;
+    }
+    
+    .album-container img
+    {
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        z-index: 40000;
+        border-radius: 5px;
+    }
+
+    .display-selected-image-box
+    {
+        width: 80%;
+        height: 60%;
+        position: fixed;
+        top: 10%;
+        left: 2%;
+    }
+
+    .display-selected-image-box div
+    {
+        top: -14%;
+    }
+
+    .close_displayed-image
+    {
+        position: relative;
+        top: 7px;
+        left: 92%;
+    }   
+
+    .fa-angle-left
+    {
+        top: 45%;
+        left: 0%;
+        padding: 10px 14px;
+        border-radius: 23px;    
+    }
+    
+    .fa-angle-right
+    {
+        top: 45%;
+        left: 65%;
+        padding: 10px 14px;
+        border-radius: 23px;    
+    }
+
 }

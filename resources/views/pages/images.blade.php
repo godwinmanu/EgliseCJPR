@@ -62,7 +62,7 @@
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Croisade 2020-2021</div>
+                <div class="album-title"> Janvier </div>
             </div>
 
             <div class="album">
@@ -70,14 +70,14 @@
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Cérémonie de Baptème </div>
+                <div class="album-title"> Février </div>
             </div>
             <div class="album">
                 <div class="last-image-of-album">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Croisade 2020-2021</div>
+                <div class="album-title"> Mars </div>
             </div>
 
             <div class="album">
@@ -85,14 +85,14 @@
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Cérémonie de Baptème </div>
+                <div class="album-title"> Avril </div>
             </div>
             <div class="album">
                 <div class="last-image-of-album">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Croisade 2020-2021</div>
+                <div class="album-title"> Mai </div>
             </div>
 
             <div class="album">
@@ -100,14 +100,14 @@
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Cérémonie de Baptème </div>
+                <div class="album-title"> Juin </div>
             </div>
             <div class="album">
                 <div class="last-image-of-album">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Croisade 2020-2021</div>
+                <div class="album-title"> Juillet </div>
             </div>
 
             <div class="album">
@@ -115,14 +115,14 @@
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Cérémonie de Baptème </div>
+                <div class="album-title"> Août </div>
             </div>
             <div class="album">
                 <div class="last-image-of-album">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Croisade 2020-2021</div>
+                <div class="album-title"> Septembre</div>
             </div>
 
             <div class="album">
@@ -130,14 +130,14 @@
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Cérémonie de Baptème </div>
+                <div class="album-title"> Octobre </div>
             </div>
             <div class="album">
                 <div class="last-image-of-album">
                     <img src="{{ asset("images/card_1.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Croisade 2020-2021</div>
+                <div class="album-title"> Novembre </div>
             </div>
 
             <div class="album">
@@ -145,14 +145,14 @@
                     <img src="{{ asset("images/card_2.png") }}" alt="">
                     <div class="images-number text-light fs-3">50</div>
                 </div>
-                <div class="album-title"> Cérémonie de Baptème </div>
+                <div class="album-title"> Décembre </div>
             </div>
 
         </div>
         <div class="display-selected-image-box">
             <h4 class="fas fa-times close_displayed-image"></h4>
-            <h4 class="fas fa-angle-left display-previous-image"></h4>
-            <h4 class="fas fa-angle-right display-next-image"></h4>
+            <h4 class="fas fa-angle-left"></h4>
+            <h4 class="fas fa-angle-right"></h4>
             
             <div></div>
         </div>

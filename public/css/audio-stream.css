@@ -1,10 +1,31 @@
+#exhibition-image
+{
+    height: 400px;
+    width: 100%;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/media.jpg);
+    background: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/media.jpg);
+    background: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/media.jpg);
+    background-size: 100% 100%;
+    display: grid;
+    place-items: center;
+}
+
+#exhibition-image div
+{
+    padding-top: 50px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    font-family: "cenMT";
+}
+
 .streaming-space
 {
     display: flex;
     flex-direction: column;
     column-gap: 100px;
     padding: 0px 10%;
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .fliters
@@ -103,3 +124,125 @@ select option
     align-self: center;
 }
 
+
+
+/* ======================= Reponsive ================ */
+
+@media screen and (max-width : 575px){
+
+    #exhibition-image
+    {
+        height: 200px;
+    }
+
+    #exhibition-image div:nth-child(1)
+    {
+        padding-top: 100px;
+        font-size: 30px;
+    }
+
+    #exhibition-image div:nth-child(2)
+    {
+        font-size: 17px;
+    }
+
+    .audio-being-read > img, .audio-being-read > audio
+    {
+        width: 100%;
+        height: 250px;
+        place-self: center;
+        padding-bottom: 10px;
+    }
+
+    .audio-being-read-infos
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .audio-being-read-infos h2
+    {
+        font-size: 16px;
+    }
+
+    .audio-being-read-infos div
+    {
+        font-size: 13px;
+    }
+
+    .share-and-download-icons 
+    {
+        display: flex;
+        justify-content: end;
+        column-gap: 10px;
+
+    }
+
+    .share-and-download-icons h3
+    {
+        font-size: 13px;
+    }
+
+    .share-and-download-icons p
+    {
+        display: none;
+    }
+
+    .share-and-download-icons > *
+    {
+        color: #6c757d;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        padding: 0px 10px;
+        padding: 0px;
+
+    }
+
+    .share-and-download-icons > a:hover
+    {
+        color: #6c757d;
+    }
+
+    .another-audio
+    {
+        display: grid;
+        grid-template-columns: 45% auto;
+        column-gap: 10px;
+        height: 10%;
+    }
+
+    .another-audio img
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .another-audio-infos div:nth-child(1)
+    {
+        font-size: 15px !important;
+    }
+
+    .another-audio i
+    {
+        bottom: 65%;
+        left: 38%;
+        font-size: 30px;
+    }
+
+    .another-audio-infos
+    {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-self: center;
+    }
+
+    .date-and-author-for-another-audio{
+        font-size: 13px;
+    }
+}

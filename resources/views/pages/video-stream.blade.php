@@ -19,7 +19,7 @@
             <img src="{{ asset('images/card_3.png') }}">
             <div class="video-being-read-infos">
                 <div>
-                    <h2 class="fw-bold">Titre de la vidéo</h2>
+                    <h2 class="fw-bold">Titre de la vidéo du dimanche 15 </h2>
                     <div class="date-and-author-for-video-being-read text-secondary fw-bold">
                         <span class="date"> 03 Août 2021 • </span>
                         <span class="author"> Ev Reynold TOKANOU </span>
@@ -44,9 +44,6 @@
                 <span id="chevron" class="fas fa-chevron-down"></span>
             </div>
             <div class="summary-text p-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam ipsa libero perspiciatis et eos ab quia mollitia, suscipit tenetur debitis, sunt, labore nostrum cupiditate modi? Suscipit incidunt minus adipisci.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam ipsa libero perspiciatis et eos ab quia mollitia, suscipit tenetur debitis, sunt, labore nostrum cupiditate modi? Suscipit incidunt minus adipisci.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam ipsa libero perspiciatis et eos ab quia mollitia, suscipit tenetur debitis, sunt, labore nostrum cupiditate modi? Suscipit incidunt minus adipisci.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam ipsa libero perspiciatis et eos ab quia mollitia, suscipit tenetur debitis, sunt, labore nostrum cupiditate modi? Suscipit incidunt minus adipisci.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam ipsa libero perspiciatis et eos ab quia mollitia, suscipit tenetur debitis, sunt, labore nostrum cupiditate modi? Suscipit incidunt minus adipisci.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam ipsa libero perspiciatis et eos ab quia mollitia, suscipit tenetur debitis, sunt, labore nostrum cupiditate modi? Suscipit incidunt minus adipisci.

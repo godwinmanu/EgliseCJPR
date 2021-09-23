@@ -16,8 +16,8 @@
             <div>Bienvenue sur l'espace audios du CJPR</div>
         </div>
 
-        <div class="audio_filter d-flex justify-content-end mt-3">
-            <select name="Months" class="form-select">
+        <div class="audio_filter mt-4">
+            <select name="Months">
                 <option selected disabled> Mois </option>
                 <option value="Jan"> Janvier </option>
                 <option value="Feb"> Février </option>
@@ -33,7 +33,7 @@
                 <option value="Dec"> Décembre </option>
             </select>
 
-            <select name="Years" class="form-select">
+            <select name="Years">
                 <option selected disabled> Années </option>
                 <option value="2019"> 2019 </option>
                 <option value="2020"> 2020 </option>
@@ -142,9 +142,24 @@
     <script>
         $(function(){
             // Pagination for audios in Médiathèque
+            let userScreenWidth = screen.width;
+            let audioperPage;
+
+
+            if(userScreenWidth < 576){
+                audioperPage = 10;
+
+            }
+            else if( userScreenWidth >= 576 && userScreenWidth < 768){
+                audioperPage = 3;
+
+            }
+            else{
+                audioperPage  = 8;
+            }
+
             let audios = $(".audio");
             let audiosNumber = audios.length;;
-            let audioperPage  = 8;
 
             audios.slice(audioperPage ).hide();
 
