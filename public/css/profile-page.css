@@ -36,3 +36,21 @@ input:disabled
     position: relative;
     right: 20px;
 }
+
+
+/* ======================= Reponsive ================ */
+
+@media screen and (max-width : 575px){
+    .profile-page
+    {
+        width: 95%;
+        height: 80%;
+    }
+
+    .profile-page label
+    {
+        position: relative;
+        top : -25px;
+        left: 90%;
+    }
+}

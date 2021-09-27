@@ -8,11 +8,15 @@
 
     <div class="menu">
         <div class="user-full-name">USER FULLNAME</div>
-        <div>
+        <div class="profil">
             <span class="fas fa-user"></span>
             <span class="profil"> Mon Profil</span>
         </div>
-        <div> 
+        <div class="go-home"> 
+            <span class="fas fa-home"></span>
+            <span> Page d'Accueil </span>
+        </div>
+        <div class="logout"> 
             <span class="fas fa-sign-out-alt"></span>
             <span> Déconnexion </span>
         </div>
@@ -23,6 +27,9 @@
             <a href="{{ route("welcome") }}">
                 <img src="{{ asset("images/logo_cjpr.png") }}" alt="LOGO CJPR">
             </a>
+            <div id="sidebar-icon">
+                <i class="fas fa-bars text-light"></i>
+            </div>
         </div>
         <div class="topBar">
             <div class="user-full-name-in-topBar">User Full Name</div>
@@ -30,7 +37,7 @@
         </div>
 
         <div class="features">
-            <div id="dash">Dashboard</div>
+            <div>Dashboard</div>
             <div>
                 <span class="fas fa-user"></span>
                 <span class="profil"> Mon Profil</span>
@@ -50,7 +57,7 @@
                 <li>Cours 7</li>
             </ul>
 
-            <div>
+            <div class="logout">
                 <span class="fas fa-sign-out-alt"></span>
                 <span> Déconnexion </span>
             </div>
@@ -108,13 +115,37 @@
 
             $(".profil").click(function(){
                 $(".display-feature").load("{{ route('profile-page') }}");
+                $(".features").animate({width  : "-50%" },400).css({display : "none"});
+                $("body").css({background : "none"});
+                $(".menu").hide();  
             });
 
-            /* $("#dash").click(function(){
-                $(".features").animate({
-                    width  : "0px"
+            $(".logout").click(function(){
+                $(".features").animate({width  : "-50%" },400).css({display : "none"});
+                window.location.href = "{{ route('login') }}";
+                $("body").css({background : "none"});
+            });
+            
+            $(".go-home").click(function(){
+                window.location.href = "{{ route('welcome') }}";
+                $(".menu").hide();  
+            });
+
+            $("#sidebar-icon").click(function(){
+                $(".features").animate({width  : "75%" },500,function(){
+                    $("body").css({background : "linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25))"});
+                }).css({display : "block", boxShadow : "25% 0% 50% gray"});
+               
+                $(".topBar").click(function(){
+                    $(".features").animate({width  : "-50%" },400).css({display : "none"});
+                    $("body").css({background : "none"});  
                 });
-            }); */
+
+                $(".display-feature").click(function(){
+                    $(".features").animate({width  : "-50%" },400).css({display : "none"});
+                    $("body").css({background : "none"});  
+                });
+            });
         });
     </script>
 @endsection

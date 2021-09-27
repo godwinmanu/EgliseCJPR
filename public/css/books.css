@@ -18,7 +18,7 @@ body{
 {
     padding-top: 50px;
     font-size: 80px;
-    font-weight: bold;
+    font-family: "cenMT";
     color: white;
 }
 
@@ -162,12 +162,164 @@ body{
     background-color: #0d795c;
 }
 
+.author-name-for-mobile,
+.book-title-for-mobile,
+.image-and-price .book-price-for-mobile
+{
+    display: none;
+}
 
-/*  Responsive  */
+/* ======================= Reponsive ================ */
 
 @media screen  and (min-width : 1400px){
     .other-books-content{
         grid-template-columns: repeat(5,1fr);
+    }
+
+}
+
+@media screen and (max-width : 575px){
+
+    #exhibition-image
+    {
+        height: 200px;
+    }
+
+    #exhibition-image div
+    {
+        font-size: 40px;
+    }
+
+    .book-detail, .other-books{
+        width: 100%;
+        justify-self: start;
+    }
+
+    .book-detail
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        padding-top: 5px;
+    }
+    
+    .other-books-content{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-items: start;
+        margin: 0px;
+        margin-bottom: 10px;
+        padding: 0px 5px;
+    }
+
+    .library-book {
+        grid-template-columns: 50% auto;
+        width: 100%;
+        height: 250px;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .library-book img
+    {
+        height: 249px;
+    }
+
+    .book-infos {
+        display: grid;
+        padding: 0px 5px;
+        height: 249px;
+    }
+
+    .bookTitle, .bookPrice {
+        font-weight: none !important;
+        text-transform: unset !important;
+        font-size: 15px;
+        justify-self: start;
+    }
+    
+    .book-image 
+    {
+        display: grid;
+        justify-items: start;
+        margin-bottom: 20px;
+    }
+    
+    .book-image img
+    {
+        width : 200px;
+        height: 300px;
+    }
+    
+    .book-detail-infos
+    {
+        display: grid;
+        align-content: space-between;
+    }
+    
+    .author-name
+    {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .author-name-for-mobile,
+    .book-title-for-mobile
+    {
+        display: flex;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .book-detail .book-title
+    {
+        display: none;
+    }
+
+    .book-detail .author-name span
+    {
+        display: none;
+    }
+
+    .book-detail .book-price
+    {  
+        display: none;
+    }
+
+    .book-detail .book-summary
+    {
+        font-size: 14px;
+    }
+
+    .image-and-price
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    .image-and-price .book-price-for-mobile
+    {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        color: #8d191c;
+        font-weight: bold;
+    }
+
+    .book-price-for-mobile .price
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .book-price-for-mobile .price span:nth-child(1)
+    {
+        font-size: 30px; 
     }
 
 }

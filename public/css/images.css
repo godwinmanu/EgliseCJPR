@@ -385,7 +385,7 @@
         background-color: #f6f8f9;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 20px;
+        gap: 3px;
         z-index: 30000;
         padding: 10px;
         overflow-y: auto;
@@ -394,10 +394,9 @@
     .album-container img
     {
         width: 150px;
-        height: 150px;
+        height: 200px;
         cursor: pointer;
         z-index: 40000;
-        border-radius: 5px;
     }
 
     .display-selected-image-box

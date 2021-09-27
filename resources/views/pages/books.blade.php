@@ -17,7 +17,18 @@
 
     <div class="book-detail">
         <div class="book-image">
-            <img src="{{ asset("images/book_1.jpg") }}" alt="Book's picture">
+            <span class="fw-bold author-name-for-mobile text-primary"> Author name</span>
+            <div class="book-title-for-mobile fw-bold fs-3">Titre du livre</div>
+
+            <div class="image-and-price">
+                <img src="{{ asset("images/book_1.jpg") }}" alt="Book's picture">
+                <span class="book-price-for-mobile">
+                    <span class="price">
+                        <span>$</span>
+                        <span>24.99</span>
+                    </span>
+                </span>    
+            </div>
         </div>
         <div class="book-detail-infos">
             <div class="d-flex justify-content-between">
