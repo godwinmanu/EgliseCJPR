@@ -31,6 +31,7 @@ use App\Http\Controllers\registerAdminController;
 use App\Http\Controllers\resetPasswordController;
 use App\Http\Controllers\forgotPasswordController;
 use App\Http\Controllers\registeredMembersController;
+use App\Http\Controllers\newsletterSubscribersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -100,5 +101,7 @@ Route::get('registered-members',[registeredMembersController::class, 'show'])->n
 Route::get('testimonies', [testimoniesController::class, 'show'])->name("testimonies");
 
 Route::get('view-donations', [viewDonationController::class, 'show'])->name("view-donations");
+
+Route::get('newsletter-subscribers', [newsletterSubscribersController::class, 'show'])->name("newsletter-subscribers");
 
 Route::get('all-resources', [allResourcesController::class, 'show'])->name("all-resources");

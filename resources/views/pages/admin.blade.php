@@ -97,6 +97,11 @@
                 </li>
     
                 <li>
+                    <span class="fas fa-envelope"></span>
+                    <span class="newsletter"> Newsletter </span>
+                </li>
+    
+                <li>
                     <span class="fas fa-users"></span>
                     <span class="registered-members"> Membres inscrits </span>
                 </li>
@@ -207,6 +212,10 @@
 
             $(".view-donations").click(function(){
                 $(".display-feature").load("{{ route('view-donations') }}");
+            });
+
+            $(".newsletter").click(function(){
+                $(".display-feature").load("{{ route('newsletter-subscribers') }}");
             });
 
             $(".all-resources").click(function(){
