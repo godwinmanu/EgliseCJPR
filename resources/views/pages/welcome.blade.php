@@ -507,13 +507,40 @@
           <div class="trait"></div> <br>
       </div>
       <div class="form py-5">
-        <form action="#" method="POST">
-          <input type="text" placeholder="Sujet" name="topic">
-          <div class="userInfos">
-            <input type="text" placeholder="Nom et Prénoms" name="username" class="w-50">
-            <input type="email" placeholder="E-mail" name="userEmail" class="w-50">
+        <form action="{{ route('welcome.submitContactForm') }}" method="POST" class="needs-validation" novalidate>
+          @csrf
+          <div class="input">
+            <input type="text" placeholder="Sujet" name="topic" class="form-control @error('topic') is-invalid @enderror" 
+            required value="{{ old('topic') }}">
+            @error('topic')
+                <div class="invalid-feedback text-warning"> {{ $message }} </div>
+            @enderror
           </div>
-          <textarea name="userMessage" rows="10" placeholder="Laissez votre message ici..."></textarea>
+          <div class="userInfos">
+            <div class="input w-50">
+              <input type="text" placeholder="Nom et Prénoms" name="username" class="w-100 form-control @error('username') is-invalid @enderror" 
+              required value="{{ old('username') }}">
+              @error('username')
+                  <div class="invalid-feedback text-warning"> {{ $message }} </div>
+              @enderror
+            </div>
+
+            <div class="input w-50">
+              <input type="email" placeholder="E-mail" name="userEmail" class="w-100 form-control @error('userEmail') is-invalid @enderror" 
+              required value="{{ old('userEmail') }}">
+              @error('userEmail')
+                  <div class="invalid-feedback text-warning"> {{ $message }} </div>
+              @enderror
+            </div>
+          </div>
+
+          <div class="input w-100">
+            <textarea name="userMessage" rows="10" placeholder="Laissez votre message ici..." class="w-100 form-control @error('userMessage') is-invalid @enderror" 
+            required value="{{ old('userMessage') }}"></textarea>
+            @error('userMessage')
+                <div class="invalid-feedback text-warning"> {{ $message }} </div>
+            @enderror
+          </div>
           <input type="submit" value="Envoyer" id="join-us-submit-button">
         </form>
       </div>
@@ -523,7 +550,26 @@
   @include('pages.testimony_detail_popup')
 
   <script>
+    (function () {
+      'use strict'
+
+      var forms = document.querySelectorAll('.needs-validation')
+
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+
     $(function(){
+
       let userScreenWidth = screen.width;
 
       // if(userScreenWidth > 576){
@@ -605,7 +651,7 @@
       // }
       
 
-      // setTimeout(popupNewsletter, 5000);
+      setTimeout(popupNewsletter, 5000);
 
       function popupNewsletter(){
         $("#popupNewsletter").fadeIn();

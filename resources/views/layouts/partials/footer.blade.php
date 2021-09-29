@@ -8,13 +8,14 @@
             <small>Info@cjprofficiel.org</small>
           </div>
         </div>
-        <div class="newsletter">
+        <div class="newsletter" id="newsletter">
           <div class="text-uppercase fw-bold text-center py-2">Newsletter</div>
           <div class="newsletter-content">
             <small>Inscrivez-vous et recevez les actualités du Centre Jésus Pour Réussir (CJPR)</small>
-            <form action="#" method="POST" class="newsletter-form">
+            <form action="{{ route('welcome.footerNewsletterForm') }}" method="POST" class="newsletter-form">
+              @csrf
               <div class="input-group">
-                <input type="email" name="user-email-for-newsletter" placeholder="Votre E-mail ici" class="w-75">
+                <input type="email" name="user-email-for-newsletter" required placeholder="Votre E-mail ici" class="w-75 form-control">
                 <input type="submit" class="submit-email" value="Envoyer">
               </div>
             </form>

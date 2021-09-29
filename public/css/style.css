@@ -600,6 +600,10 @@ footer {
     color: #ff0000;
 }
 
+#testimonypopup form input{
+    width: 100%;
+}
+
 #popupNewsletter,
 #testimonypopup {
     z-index: 10000;

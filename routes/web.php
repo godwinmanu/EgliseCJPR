@@ -17,6 +17,7 @@ use App\Http\Controllers\lessonsController;
 use App\Http\Controllers\welcomeController;
 use App\Http\Controllers\postBookController;
 use App\Http\Controllers\dashboardController;
+use App\Http\Controllers\TestimonyController;
 use App\Http\Controllers\audioStreamController;
 use App\Http\Controllers\profilePageController;
 use App\Http\Controllers\testimoniesController;
@@ -46,6 +47,14 @@ use App\Http\Controllers\newsletterSubscribersController;
 
 Route::get('/', [welcomeController::class, 'index'])->name("welcome");
 
+Route::post('/', [welcomeController::class, 'submitContactForm'])->name("welcome.submitContactForm");
+
+Route::post('/subscribe-to-newsletter1', [welcomeController::class, 'newsletterForm'])->name("welcome.newsletterForm");
+
+Route::post('/subscribe-to-newsletter2', [welcomeController::class, 'newsletterForm'])->name("welcome.footerNewsletterForm");
+
+Route::post('/testimony', [TestimonyController::class, 'storeTestimony'])->name("storeTestimony");
+
 Route::get('videos', [videosController::class, 'show'])->name("videos");
 
 Route::get('Images', [imagesController::class, 'show'])->name("images");
@@ -68,7 +77,11 @@ Route::get('donate', [donateController::class, 'show'])->name("donate");
 
 Route::get('login', [loginController::class, 'show'])->name("login");
 
+Route::post('login', [loginController::class, 'memberLogin'])->name("memberLogin");
+
 Route::get('signup', [signUpController::class, 'show'])->name("signup");
+
+Route::post('signup', [signUpController::class, 'registerMember'])->name("register-member");
 
 Route::get('forgot_password', [forgotPasswordController::class, 'show'])->name("forgot_password");
 
