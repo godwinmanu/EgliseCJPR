@@ -151,6 +151,12 @@ a {
     filter: brightness(60%);
 }
 
+.carousel-item > video {
+    height: 813px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
 .slideButton {
     border: 0px;
     border-radius: 100px;
@@ -952,11 +958,13 @@ footer {
         cursor: pointer;
     }
 
-    .carousel-item > img {
+    .carousel-item > img,
+    .carousel-item > video {
         height: 200px;
         width: 100%;
         filter: brightness(60%);
     }
+
 
     .slide-arrow
     {

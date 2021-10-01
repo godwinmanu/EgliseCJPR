@@ -81,7 +81,7 @@ Route::post('login', [loginController::class, 'memberLogin'])->name("memberLogin
 
 Route::get('signup', [signUpController::class, 'show'])->name("signup");
 
-Route::post('signup', [signUpController::class, 'registerMember'])->name("register-member");
+Route::post('signup', [signUpController::class, 'registerSimpleMember'])->name("registerSimpleMember");
 
 Route::get('forgot_password', [forgotPasswordController::class, 'show'])->name("forgot_password");
 
@@ -100,6 +100,8 @@ Route::get('upload-audios', [uploadAudiosController::class, 'show'])->name("uplo
 Route::get('upload-images', [uploadImageController::class, 'show'])->name("upload-images");
 
 Route::get('register-admin', [registerAdminController::class, 'show'])->name("register-admin");
+
+Route::post('register-admin', [registerAdminController::class, 'registerAdmin'])->name("registerAdmin");
 
 Route::get('post-books', [postBookController::class, 'show'])->name("post-books");
 

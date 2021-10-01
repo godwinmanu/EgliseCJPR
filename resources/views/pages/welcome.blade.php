@@ -24,7 +24,7 @@
                 </div>
                 
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item">
                 <img src="{{ asset("images/SLIDE_2.jpg") }}" alt="SLIDE">
             </div>
             <div class="carousel-item" data-bs-interval="3000">
@@ -33,12 +33,16 @@
             <div class="carousel-item" data-bs-interval="3000">
                 <img src="{{ asset("images/SLIDE_2.jpg") }}" alt="SLIDE">
             </div>
+            <div class="carousel-item" data-bs-interval="41000">
+                <video class="img-fluid" src="{{ asset("Videos/notre-vision.mp4") }}" autoplay loop muted></video>
+            </div>
         </div>
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
         </div>            
         <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel">
             <div class="fas fa-angle-left slide-arrow"></div>

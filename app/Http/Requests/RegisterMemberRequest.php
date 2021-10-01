@@ -29,7 +29,7 @@ class RegisterMemberRequest extends FormRequest
             "email" => "required|email",
             "telephone" => "required|numeric",
             "ville" => "required|alpha",
-            "motDePasse" => "required|confirmed|min:6",
+            "motDePasse" => "required|confirmed|min:6"
         ];
     }
 }
