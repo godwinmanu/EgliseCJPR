@@ -81,7 +81,7 @@ Route::post('login', [loginController::class, 'memberLogin'])->name("memberLogin
 
 Route::get('signup', [signUpController::class, 'show'])->name("signup");
 
-Route::post('signup', [signUpController::class, 'registerSimpleMember'])->name("registerSimpleMember");
+Route::post('signup', [signUpController::class, 'registerMember'])->name("register-member");
 
 Route::get('forgot_password', [forgotPasswordController::class, 'show'])->name("forgot_password");
 
