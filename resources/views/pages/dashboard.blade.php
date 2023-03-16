@@ -113,12 +113,12 @@
                 $(".menu").slideToggle(500);
             });
 
-            $(".profil").click(function(){
+            /* $(".profil").click(function(){
                 $(".display-feature").load("{{ route('profile-page') }}");
                 $(".features").animate({width  : "-50%" },400).css({display : "none"});
                 $("body").css({background : "none"});
                 $(".menu").hide();  
-            });
+            }); */
 
             $(".logout").click(function(){
                 $(".features").animate({width  : "-50%" },400).css({display : "none"});
